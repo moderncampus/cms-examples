@@ -1,0 +1,29 @@
+#main {
+	font: normal 14px Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+.sp-container {
+	border: none;
+	background: none;
+}
+.sp-picker-container {
+	float: none;
+	width: 220px;
+	border-left: none;
+	padding: 0;
+}
+.sp-input {
+	background: white;
+	font: normal 14px Helvetica, Arial, sans-serif !important;
+}
+#swatch {
+	display: inline-block;
+	width: 218px;
+	height: 24px;
+	border: 1px inset;
+}
+#insert-btn {
+	width: 220px;
+	padding: 5px;
+	font: normal 14px Helvetica, Arial, sans-serif;
+}

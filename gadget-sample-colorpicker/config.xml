@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<config>
+	<entry key="types" private="true">sidebar</entry>
+	<entry key="title">Color Picker</entry>
+	<entry key="icon" private="true">icon.png</entry>
+	<entry key="initial_height" private="true">300</entry>
+	<entry key="initial_color" label="Starting Color" overwritable="true">#05d7dd</entry>
+</config>
