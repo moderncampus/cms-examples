@@ -1,0 +1,9 @@
+ORIGINAL PATH,NEW PATH,TITLE,TEMPLATE
+/index.aspx,/index.aspx,Home,home
+/interior.aspx,/interior.aspx,Interior Page,interior
+/full_width.aspx,/full_width.aspx,Full Width Page,full width
+/dir1/interior.aspx,/dir1/interior.aspx,Dir 1 Interior Page,interior
+/dir1/index.aspx,/dir1/index.aspx,Dir 1 Index,interior
+/dir1/dir2/index.aspx,/dir1/dir2/index.aspx,Dir 2 Index,interior
+/dir1/dir2/full-width.aspx,/dir1/dir2/full_width.aspx,Dir 2 Full Width Page,full width
+/dir3/interior.aspx,/dir3/interior.aspx,Dir 3 Interior,interior

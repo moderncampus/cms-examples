@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?pcf-stylesheet path="/_resources/xsl/interior.xsl" extension="aspx"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	<headcode></headcode>
+	<bodycode></bodycode>
+	<footcode></footcode>
+	
+	<ouc:properties label="metadata">
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+	</ouc:properties>
+	
+	<parameter name="pagetype">interior</parameter>
+	
+	<ouc:properties label="config">
+		<title><%= @title %></title>
+		<%= @sidebar_disp %>
+	</ouc:properties>
+	
+	<ouc:div label="maincontent" group="Everyone" button-class="oucEditButton" button-text="Edit Main Content" break="break">
+    <ouc:editor wysiwyg-class="maincontent" csspath="/_resources/ou/editor/maincontent.css" cssmenu="/_resources/ou/editor/styles.txt" width="1200" />
+    	<%= @content %><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus massa eget felis hendrerit, in ornare velit lacinia. Nulla gravida turpis at magna pulvinar, consectetur iaculis enim fringilla. Cras vel ipsum sed neque gravida fringilla. Cras sodales enim non libero iaculis tempor. Praesent convallis sapien eu leo ullamcorper tincidunt. Donec ut arcu egestas, dictum lectus quis, feugiat ligula. Vestibulum eget nisi augue. Nullam libero purus, adipiscing non scelerisque a, fringilla non ipsum. Duis eget convallis ligula. Sed sed luctus risus. Vivamus vitae nisl enim.</p>
+  	</ouc:div>
+</document>

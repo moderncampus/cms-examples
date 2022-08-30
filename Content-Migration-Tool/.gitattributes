@@ -1,0 +1,2 @@
+*.aspx linguist-detectable=false
+*.rb linguist-detectable=true

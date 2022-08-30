@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?pcf-stylesheet path="/_resources/xsl/default.xsl" extension="aspx"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	<headcode></headcode>
+	<bodycode></bodycode>
+	<footcode></footcode>
+	
+	<ouc:properties label="metadata">
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+	</ouc:properties>
+	
+	<parameter name="pagetype">home</parameter>
+	
+	<ouc:properties label="config">
+		<title><%= @title %></title>
+	</ouc:properties>
+	
+	<ouc:div label="maincontent" group="none" button-class="oucEditButton" button-text="Edit Main Content" break="break">
+		<ouc:editor wysiwyg-class="home-maincontent nav nav-inline nav-interior" csspath="/_resources/ou/editor/maincontent.css" cssmenu="/_resources/ou/editor/styles.txt" width="1024" />
+		<%= @content %>
+	</ouc:div>
+</document>
