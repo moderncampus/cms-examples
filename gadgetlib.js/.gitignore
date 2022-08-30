@@ -1,0 +1,10 @@
+package.json
+node_modules
+gulpfile.js
+*~
+*#
+.DS_STORE
+.netbeans
+nbproject
+.idea
+.node_history
