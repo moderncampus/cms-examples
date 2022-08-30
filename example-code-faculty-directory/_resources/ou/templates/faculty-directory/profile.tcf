@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tcf>
+	<title>New Profile Page</title>
+	
+	<variable-list>
+		<!-- general page setup -->
+		<variable section="General Page Setup" name="title" type="text" prompt="Page Title" alt="Required Field. Enter the page title. This will also be displayed by search engines as well as the web browser window.">Page Title</variable>
+		<variable name="description" type="text" rows="3" prompt="Description" alt="Important. Enter a short description of the page, to be displayed by search engines."></variable>
+		<variable name="pcf-filename" prompt="Filename" alt="Enter a filename using only lowercase letters, underscores, or dashes">untitled</variable>
+		<!-- profile info -->
+		<variable section="Profile Info" name="firstname" prompt="First Name" alt="Enter the faculty member's first name."></variable>
+		<variable name="lastname" prompt="Last Name" alt="Enter the faculty member's last name."></variable>
+		<variable name="department" prompt="Department" alt="Department"></variable>
+	</variable-list>
+
+	<template-list>
+		<template
+			prompt-prefix="New Profile Page"
+			group="*inherit*"
+			filename="{pcf-filename}"
+			extension="pcf"
+			display-filename="no"
+			publish="no">profile.tmpl</template>
+	</template-list>
+</tcf>

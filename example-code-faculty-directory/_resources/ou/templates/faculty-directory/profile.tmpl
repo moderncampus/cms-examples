@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?pcf-stylesheet path="/_resources/xsl/profiles/profile.xsl" extension="html"?>
+<?pcf-stylesheet path="/_resources/xsl/profiles/profile-xml.xsl" alternate="yes" extension="xml"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	<headcode></headcode>
+	<bodycode></bodycode>
+	<footcode></footcode>
+
+	<ouc:properties label="metadata">
+		<title><!--%echo var="department" --> Staff</title>
+		<meta name="description" content="<!--%echo var="description" -->" />
+	</ouc:properties>
+
+	<ouc:properties label="config">
+		<parameter name="heading" prompt="Heading/Breadcrumb" alt="Heading displays above main content, Breadcrumb above heading, initial value is page title." group="Everyone"><!--%echo var="department" --> Staff</parameter>
+	</ouc:properties>
+			<profile>
+		<ouc:div label="image" group="Everyone" button="hide"><ouc:multiedit type="image" prompt="Image" path="/images/"/><img src="/_resources/images/faculty/tonycook.jpg" alt="Tony Cook" /></ouc:div>
+		
+		<ouc:div label="firstname"  group="Everyone"  button="hide"><ouc:multiedit type="text" prompt="First Name" alt="First Name"/><!--%echo var="firstname" --></ouc:div>
+		<ouc:div label="lastname"  group="Everyone"  button="hide"><ouc:multiedit type="text" prompt="Last Name" alt="Last Name"/><!--%echo var="lastname" --></ouc:div>
+		<ouc:div label="title"  group="Everyone"  button="hide" ><ouc:multiedit type="text" prompt="Title" alt="Title"/><!--%echo var="title" --></ouc:div>
+		<ouc:div label="department"  group="Everyone"  button="hide" ><ouc:multiedit type="text" prompt="Department" alt="Department"/><!--%echo var="department" --></ouc:div>
+		<ouc:div label="email"  group="Everyone"  button="hide" ><ouc:multiedit type="text" prompt="Email" alt="Email Address"/></ouc:div>
+		<ouc:div label="phone"  group="Everyone"  button="hide" ><ouc:multiedit type="text" prompt="Phone" alt="Format: (###) ###-####"/></ouc:div>
+		<ouc:div label="fax"  group="Everyone"  button="hide" ><ouc:multiedit type="text" prompt="Fax" alt="Format: (###) ###-####"/></ouc:div>
+		<ouc:div label="office-hours"  group="Everyone"  button="hide"><ouc:multiedit type="textarea" rows="2" prompt="Office Hours" alt="Format: Day - Time, Day - Time"/></ouc:div>
+		<ouc:div label="location"  group="Everyone"  button="hide" ><ouc:multiedit type="select" prompt="Location" alt="Choose a location" options="Charity School of Nursing:Charity School of Nursing;City Park:City Park;Gretna Facility:Gretna Facility;Jefferson Site (Technical Division):Jefferson Site (Technical Division);Maritime, Fire and Industrial Facility:Maritime, Fire and Industrial Facility;Northshore - Covington:Northshore - Covington;Northshore - Slidell:Northshore - Slidell;West Bank:West Bank;West Jefferson Site (Technical Division):West Jefferson Site (Technical Division)"/></ouc:div>
+		<ouc:div label="building"  group="Everyone"  button="hide" ><ouc:multiedit type="text" prompt="Building" alt="Building 12345"/></ouc:div>
+		<ouc:div label="room"  group="Everyone"  button="hide" ><ouc:multiedit type="text" prompt="Room" alt="120E"/></ouc:div>
+	</profile>
+
+
+	<ouc:div label="maincontent"  group="Everyone"  button-class="btn-ouc" button-text="Main Content"  break="break">
+		<ouc:editor csspath="/_resources/ou/editor/maincontent.css" cssmenu="/_resources/ou/editor/styles.txt" width="955" wysiwyg-class="maincontent"/>
+		<h3><strong>Bio</strong>:</h3>
+		<p>Profile bio information goes here, along with any other infomration you would like to display.</p>
+		<h3><strong>Social Media</strong>:</h3>
+		<p>Twitter: <a href="https://twitter.com/">@TwitterHandle</a></p>
+		<p>Blog: <a href="http://sampleblog.com" target="_blank">Sample Blog Title</a></p></ouc:div>
+
+
+</document>

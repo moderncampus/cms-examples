@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile href="/faculty/angelina-grala.html">
+   <image>
+      <img src="/_resources/images/faculty/angelina-grala.jpg" alt="Angelina Grala"></img>
+   </image>
+   <firstname>Angelina</firstname>
+   <lastname>Grala</lastname>
+   <title>Professor</title>
+   <department>Accounting</department>
+   <email>agrala@gallenauniversity.com</email>
+   <phone>(800) 362-2605</phone>
+   <fax></fax>
+   <office-hours>TTh 1:00pm - 3:00pm</office-hours>
+   <location></location>
+   <building></building>
+   <room></room>
+</profile>

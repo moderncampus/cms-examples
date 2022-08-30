@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tcf>
+<title>New Profile Section</title>
+
+<variable-list>
+	<!-- dirname and friendly name -->
+    <include>_sectionvars.inc</include>
+	<!-- general page setup -->
+    <include>_commonvars.inc</include>
+</variable-list>
+
+<directory-list> 
+	<parent name="current_folder" force-lowercase="no" path="."> 
+		<directory name="new_folder" prompt-prefix="New Section" force-lowercase="yes" display-group="yes" publish="yes" template-group="Profiles">{dirname}</directory> 
+	</parent>
+</directory-list>
+
+<template-list>
+	<include>_sectiontemplates.inc</include>
+	<template
+		prompt-prefix="New Profile Listing"
+		display-group="no"
+		display-overwrite="no"
+		preferred-redirect="yes"
+		filename="index"
+		extension="pcf"
+		display-filename="no"
+		force-destination="yes"
+		destination="{new_folder}"
+		publish="no">profile_landing.tmpl</template>
+</template-list>
+</tcf>

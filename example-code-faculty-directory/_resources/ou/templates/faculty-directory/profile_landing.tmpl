@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?pcf-stylesheet path="/_resources/xsl/profiles/profile.xsl" extension="html"?>
+<?pcf-stylesheet path="/_resources/xsl/profiles/profile-xml.xsl" alternate="yes" extension="xml"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	<headcode></headcode>
+	<bodycode></bodycode>
+	<footcode></footcode>
+
+	<ouc:properties label="metadata">
+		<title><!--%echo var="title" --></title>
+		<meta name="description" content="<!--%echo var="description" -->" />
+	</ouc:properties>
+
+	<ouc:properties label="config">
+		<parameter name="heading" prompt="Heading/Breadcrumb" alt="Heading displays above main content, Breadcrumb above heading, initial value is page title." group="Everyone"><!--%echo var="title" --></parameter>
+	</ouc:properties>
+
+	<ouc:div label="maincontent"  group="Everyone"  button-class="btn-ouc" button-text="Main Content"  break="break">
+		<ouc:editor csspath="/_resources/ou/editor/maincontent.css" cssmenu="/_resources/ou/editor/menu.txt" width="955" wysiwyg-class="maincontent"/>
+						
+	</ouc:div>
+
+</document>
