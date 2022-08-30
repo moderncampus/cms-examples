@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tcf>
+	<title>New Interior Page</title>
+	<variable-list>
+		<!-- general page setup -->
+		<include>_commonvars.inc</include>
+		<!-- A safer way to create a file, forces PCF file extension -->
+		<variable name="pcf-filename" prompt="Filename" alt="Enter a filename using only lowercase letters, underscores, or dashes">untitled</variable>
+	</variable-list>
+	<template-list>
+		<template
+				  prompt-prefix="Interior Page"
+				  filename="{pcf-filename}"
+				  display-filename="no"
+				  extension="pcf"
+				  autonav="{autonavigation}">interior.tmpl</template>
+	</template-list>
+	<navigation-list>
+		<navigation name="true" path="_nav.inc" group="Everyone" publish="no"><li><a href="{ox_autonav:shorturl}">{title}</a></li></navigation>
+		<navigation name="false" path="_nav.inc" group="Everyone" publish="no"></navigation>
+	</navigation-list>
+</tcf>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/home.xsl" title="HTML" extension="php"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+
+	<ouc:properties label="metadata">
+		<title>Home</title>
+		<meta name="Description" content="" />
+		<meta name="Keywords" content="" />
+	</ouc:properties>
+
+	<ouc:properties label="config">
+		<parameter prompt="Banner" name="banner-image" type="filechooser" group="Everyone" alt="Please choose the image you would like to display at the top of the page." dependency="yes">http://via.placeholder.com/1600x500/1/</parameter>
+	</ouc:properties>
+	
+	<ouc:div label="maincontent" group="Everyone" button-text="Edit Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="maincontent"/>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed varius leo. Etiam quis elit ultricies, porta odio nec, semper metus. Phasellus tempus aliquet lectus, quis venenatis nisl cursus et. Praesent nulla magna, auctor id orci vel, vehicula faucibus turpis. Aliquam non viverra turpis. Phasellus dictum sem sodales ipsum interdum, vel tincidunt est tempor. Sed ultrices ante erat, porttitor ornare metus pharetra non. Nam id aliquam nisl, ut elementum lorem. Aenean interdum neque vitae risus bibendum, nec vehicula sem tempus. Sed sollicitudin felis massa, ac tincidunt libero blandit et. Sed pulvinar volutpat purus eu eleifend. Suspendisse adipiscing pretium elementum.</p>
+	</ouc:div>
+</document>
