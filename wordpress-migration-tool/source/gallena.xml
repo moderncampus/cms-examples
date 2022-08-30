@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/">
+
+<channel>
+<item>
+		<title>Library</title>
+		<link>https://www.gallena.edu/academics/library/</link>
+		<pubDate>Thu, 19 Apr 2018 15:22:00 +0000</pubDate>
+		<dc:creator><![CDATA[Pearlie.Bowser]]></dc:creator>
+		<guid isPermaLink="false">https://www.gallena.edu/library</guid>
+		<description></description>
+		<content:encoded><![CDATA[The mission of the Library organization is to connect students, faculty, staff, and members of the local [quote]What can you do with a degree? Just about anything you want.[/quote] community with the information resources they need for study, research, and recreation. The library contains substantial collections of books, journals, government documents, videos, maps, and other physical materials, all listed in its online catalog.[gallery id="123" size="medium"] ]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>35466</wp:post_id>
+		<wp:post_date><![CDATA[2018-04-19 11:22:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-04-19 15:22:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[Academics]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="events_categories" nicename="campus-event"><![CDATA[Campus Event]]></category>
+		<category domain="events_categories" nicename="main"><![CDATA[Main]]></category>
+			<wp:postmeta>
+			<wp:meta_key><![CDATA[_vc_post_settings]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{s:10:"vc_grid_id";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[14]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[slide_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wpb_vc_js_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[true]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wpb_shortcodes_custom_css]]></wp:meta_key>
+			<wp:meta_value><![CDATA[.vc_custom_1419328663991{background-color: #f4f4f4 !important;}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Study Abroad</title>
+		<link>https://www.gallena.edu/academics/study-abroad/?page_id=316</link>
+		<pubDate>Thu, 19 Apr 2018 15:22:00 +0000</pubDate>
+		<dc:creator><![CDATA[Pearlie.Bowser]]></dc:creator>
+		<guid isPermaLink="false">https://www.gallena.edu/study-abroad</guid>
+		<description></description>
+		<content:encoded><![CDATA[The International Programs Office offers study abroad programs in over 20 countries throughout the world, in every academic discipline at GU! Study abroad for a year or a semester while earning credit towards your major, minor, or general education requirements. Instruction is in a wide range of languages, including many options in English. Financial aid and scholarships are available. Fill out the following form to receive more information in your chosen field.[embed]https://www.youtube.com/watch?v=7uRKXfhiSTs[/embed]]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>35466</wp:post_id>
+		<wp:post_date><![CDATA[2018-04-19 11:22:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-04-19 15:22:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[Academics]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="events_categories" nicename="campus-event"><![CDATA[Campus Event]]></category>
+		<category domain="events_categories" nicename="main"><![CDATA[Main]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_vc_post_settings]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{s:10:"vc_grid_id";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[14]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Academics</title>
+		<link>https://www.gallena.edu/academics/</link>
+		<pubDate>Thu, 19 Apr 2018 15:22:00 +0000</pubDate>
+		<dc:creator><![CDATA[Pearlie.Bowser]]></dc:creator>
+		<guid isPermaLink="false">https://www.gallena.edu/academics</guid>
+		<description></description>
+		<content:encoded><![CDATA[Our faculty comes from all over the globe to share their experiences and knowledge with our future leaders. Each faculty member strives to help individual students develop their talents for future success. In addition, the research conducted by faculty has won prestigious awards in their respected fields of study.[button link="https://https://www.gallena.edu/about/"]More About Gallena[/button]]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>35466</wp:post_id>
+		<wp:post_date><![CDATA[2018-04-19 11:22:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-04-19 15:22:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[Academics]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="events_categories" nicename="campus-event"><![CDATA[Campus Event]]></category>
+		<category domain="events_categories" nicename="main"><![CDATA[Main]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_vc_post_settings]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{s:10:"vc_grid_id";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[7]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[ai1ec_banner_image]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_ai1ec_cost_type]]></wp:meta_key>
+			<wp:meta_value><![CDATA[free]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[slide_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_yoast_wpseo_primary_events_categories]]></wp:meta_key>
+			<wp:meta_value><![CDATA[91]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+			<wp:meta_value><![CDATA[30]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Gallena Gophers</title>
+		<link>https://www.gallena.edu/gallena-gophers/</link>
+		<pubDate>Thu, 19 Apr 2018 15:22:00 +0000</pubDate>
+		<dc:creator><![CDATA[Pearlie.Bowser]]></dc:creator>
+		<guid isPermaLink="false">https://www.gallena.edu/gallena-gophers</guid>
+		<description></description>
+		<content:encoded><![CDATA[The proud history of the Gallena Gophers dates back to the University's inception in 1897. Gallena University was the first university on the west coast to develop a rowing team, carrying on a proud tradition in university sports programs. Today, Gallena’s Athletics program features 17 sports competing at the NCAA Division I level in the Big West Conference.[gophers_accordion id="11"]]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>35466</wp:post_id>
+		<wp:post_date><![CDATA[2018-04-19 11:22:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-04-19 15:22:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[Athletics]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="events_categories" nicename="campus-event"><![CDATA[Campus Event]]></category>
+		<category domain="events_categories" nicename="main"><![CDATA[Main]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_vc_post_settings]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{s:10:"vc_grid_id";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[14]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[slide_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wpb_vc_js_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[true]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wpb_shortcodes_custom_css]]></wp:meta_key>
+			<wp:meta_value><![CDATA[.vc_custom_1419328663991{background-color: #f4f4f4 !important;}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Prospective Athletes</title>
+		<link>https://www.gallena.edu/prospective-athletes/</link>
+		<pubDate>Thu, 19 Apr 2018 15:22:00 +0000</pubDate>
+		<dc:creator><![CDATA[Pearlie.Bowser]]></dc:creator>
+		<guid isPermaLink="false">https://www.gallena.edu/prospective-athletes</guid>
+		<description></description>
+		<content:encoded><![CDATA[If you are a prospective student-athlete interested in learning more about our athletics programs, please fill out a prospective student-athlete form. This form is not an official university application. This information may be seen by various people and may be retained either in electronic or paper format.[gophers_slider id="23"]]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>35466</wp:post_id>
+		<wp:post_date><![CDATA[2018-04-19 11:22:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-04-19 15:22:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[Athletics]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="events_categories" nicename="campus-event"><![CDATA[Campus Event]]></category>
+		<category domain="events_categories" nicename="main"><![CDATA[Main]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wpb_shortcodes_custom_css]]></wp:meta_key>
+			<wp:meta_value><![CDATA[.vc_custom_1419240516480{background-color: #f9f9f9 !important;}.vc_custom_1507052007250{background-color: #e5eef6 !important;}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wpb_vc_js_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[true]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[slide_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_vc_post_settings]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{s:10:"vc_grid_id";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+			<wp:meta_value><![CDATA[14]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>University Recreation</title>
+		<link>https://www.gallena.edu/university-recreation/</link>
+		<pubDate>Thu, 19 Apr 2018 15:22:00 +0000</pubDate>
+		<dc:creator><![CDATA[Pearlie.Bowser]]></dc:creator>
+		<guid isPermaLink="false">https://www.gallena.edu/university-recreation</guid>
+		<description></description>
+		<content:encoded><![CDATA[Gallena's Recreation Center offers both an outlet for those who would prefer the arena of serious competition and a relaxed atmosphere for those that just want to unwind. Help us provide you with a rewarding recreational experience by sharing your ideas and encouraging others to be active. Our staff will be happy to help meet your recreational needs while providing a friendly, helpful and safe environment.
+
+
+
+[button_secondary link="https://goo.gl/maps/tE3C7CZY63v"]Driving Directions[/button_secondary]
+
+
+			]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>35466</wp:post_id>
+		<wp:post_date><![CDATA[2018-04-19 11:22:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-04-19 15:22:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[Athletics]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="events_categories" nicename="campus-event"><![CDATA[Campus Event]]></category>
+		<category domain="events_categories" nicename="main"><![CDATA[Main]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_yoast_wpseo_linkdex]]></wp:meta_key>
+			<wp:meta_value><![CDATA[84]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_yoast_wpseo_content_score]]></wp:meta_key>
+			<wp:meta_value><![CDATA[30]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_webdados_fb_open_graph_specific_image]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_yoast_wpseo_primary_category]]></wp:meta_key>
+			<wp:meta_value><![CDATA[]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+			<wp:meta_value><![CDATA[38479]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wp_old_date]]></wp:meta_key>
+			<wp:meta_value><![CDATA[2018-10-24]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Admissions</title>
+		<link>https://www.gallena.edu/admissions/</link>
+		<pubDate>Thu, 19 Apr 2018 15:22:00 +0000</pubDate>
+		<dc:creator><![CDATA[Pearlie.Bowser]]></dc:creator>
+		<guid isPermaLink="false"></guid>
+		<description></description>
+		<content:encoded><![CDATA[Whether in undergraduate or graduate program, Gallena University offers many small class sizes, a friendly campus, and caring faculty. Our professors take the time to develop one-on-one relationships with you. One of our main goals is for you to be an active participant in the learning process.
+
+
+
+[three_columns]<span class="gallena" style="font-size: 24px">Schedule of Events </span>
+
+<strong>Friday, March 22, 2019</strong>
+
+7:00 pm - Keynote Address
+8:00 pm - Reception and Book Signing
+
+[/three_columns]
+
+			]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>35466</wp:post_id>
+		<wp:post_date><![CDATA[2018-04-19 11:22:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-04-19 15:22:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[Admissions]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="events_categories" nicename="campus-event"><![CDATA[Campus Event]]></category>
+		<category domain="events_categories" nicename="main"><![CDATA[Main]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_tablepress_export_table_id</wp:meta_key>
+			<wp:meta_value><![CDATA[11]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_tablepress_table_options]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{"last_editor":6,"table_head":true,"table_foot":false,"alternating_row_colors":true,"row_hover":true,"print_name":false,"print_name_position":"above","print_description":false,"print_description_position":"below","extra_css_classes":"","use_datatables":true,"datatables_sort":true,"datatables_filter":true,"datatables_paginate":true,"datatables_lengthchange":true,"datatables_paginate_entries":10,"datatables_info":true,"datatables_scrollx":false,"datatables_custom_commands":""}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_tablepress_table_visibility]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{"rows":[1,1],"columns":[1,1,1,1,1]}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Transfer Students</title>
+		<link>https://www.gallena.edu/transfer-students/</link>
+		<pubDate>Thu, 19 Apr 2018 15:22:00 +0000</pubDate>
+		<dc:creator><![CDATA[Pearlie.Bowser]]></dc:creator>
+		<guid isPermaLink="false"></guid>
+		<description></description>
+		<content:encoded><![CDATA[Students interested in transferring to Gallena University may do so up until the end of their sophomore year. We welcome transfer applications for the Fall or Spring Semester.[gophers_slider id="22"]]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>35466</wp:post_id>
+		<wp:post_date><![CDATA[2018-04-19 11:22:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-04-19 15:22:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[Admissions]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="events_categories" nicename="campus-event"><![CDATA[Campus Event]]></category>
+		<category domain="events_categories" nicename="main"><![CDATA[Main]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_dt_fancy_header_bg_fixed]]></wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_dt_fancy_header_parallax_speed]]></wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_dt_fancy_header_height]]></wp:meta_key>
+			<wp:meta_value><![CDATA[300]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_dt_post_options_back_button]]></wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_dt_post_options_hide_thumbnail]]></wp:meta_key>
+			<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Undergraduate Students</title>
+		<link>https://www.gallena.edu/admissions/?page_id=310</link>
+		<pubDate>Thu, 19 Apr 2018 15:22:00 +0000</pubDate>
+		<dc:creator><![CDATA[Pearlie.Bowser]]></dc:creator>
+		<guid isPermaLink="false"></guid>
+		<description></description>
+		<content:encoded><![CDATA[Admission to all majors at Gallena University is competitive. Freshmen applicants must meet minimum GU eligibility requirements below to be considered.
+			[gallery id="124" size="medium"]
+			]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>35466</wp:post_id>
+		<wp:post_date><![CDATA[2018-04-19 11:22:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-04-19 15:22:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[Admissions]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="events_categories" nicename="campus-event"><![CDATA[Campus Event]]></category>
+		<category domain="events_categories" nicename="main"><![CDATA[Main]]></category>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_wpb_vc_js_status]]></wp:meta_key>
+			<wp:meta_value><![CDATA[false]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_vc_post_settings]]></wp:meta_key>
+			<wp:meta_value><![CDATA[a:1:{s:10:"vc_grid_id";a:0:{}}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[slide_template]]></wp:meta_key>
+			<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Prospective Athletes</title>
+		<link>https://www.gallena.edu/admissions/prospective-athletes/</link>
+		<pubDate>Thu, 19 Apr 2018 15:22:00 +0000</pubDate>
+		<dc:creator><![CDATA[Pearlie.Bowser]]></dc:creator>
+		<guid isPermaLink="false"></guid>
+		<description></description>
+		<content:encoded><![CDATA[If you are a prospective student-athlete interested in learning more about our athletics programs, please fill out a prospective student-athlete form. This form is not an official university application. This information may be seen by various people and may be retained either in electronic or paper format.
+[gophers_slider id="12"]
+
+			]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>35466</wp:post_id>
+		<wp:post_date><![CDATA[2018-04-19 11:22:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-04-19 15:22:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[Admissions]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="events_categories" nicename="campus-event"><![CDATA[Campus Event]]></category>
+		<category domain="events_categories" nicename="main"><![CDATA[Main]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_tablepress_export_table_id</wp:meta_key>
+			<wp:meta_value><![CDATA[11]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_tablepress_table_options]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{"last_editor":6,"table_head":true,"table_foot":false,"alternating_row_colors":true,"row_hover":true,"print_name":false,"print_name_position":"above","print_description":false,"print_description_position":"below","extra_css_classes":"","use_datatables":true,"datatables_sort":true,"datatables_filter":true,"datatables_paginate":true,"datatables_lengthchange":true,"datatables_paginate_entries":10,"datatables_info":true,"datatables_scrollx":false,"datatables_custom_commands":""}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_tablepress_table_visibility]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{"rows":[1,1],"columns":[1,1,1,1,1]}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title>Tailgating Policy</title>
+		<link>https://www.gallena.edu/admissions/tailgating-policy/</link>
+		<pubDate>Thu, 19 Apr 2018 15:22:00 +0000</pubDate>
+		<dc:creator><![CDATA[Pearlie.Bowser]]></dc:creator>
+		<guid isPermaLink="false"></guid>
+		<description>
+		</description>
+		<content:encoded><![CDATA[Our students, faculty, staff and fans are all valuable members of the Gallena family. Your attendance and participation at the games is a big part of our success. In order to make your attendance and that of those with and around you a positive one, our number one priority for tailgating is for your safety. Enjoy the game and GO Gophers!
+
+[gallery id="126" size="medium"]
+			]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>35466</wp:post_id>
+		<wp:post_date><![CDATA[2018-04-19 11:22:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2018-04-19 15:22:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[Admissions]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="events_categories" nicename="campus-event"><![CDATA[Campus Event]]></category>
+		<category domain="events_categories" nicename="main"><![CDATA[Main]]></category>
+		<wp:postmeta>
+			<wp:meta_key>_tablepress_export_table_id</wp:meta_key>
+			<wp:meta_value><![CDATA[11]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_tablepress_table_options]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{"last_editor":6,"table_head":true,"table_foot":false,"alternating_row_colors":true,"row_hover":true,"print_name":false,"print_name_position":"above","print_description":false,"print_description_position":"below","extra_css_classes":"","use_datatables":true,"datatables_sort":true,"datatables_filter":true,"datatables_paginate":true,"datatables_lengthchange":true,"datatables_paginate_entries":10,"datatables_info":true,"datatables_scrollx":false,"datatables_custom_commands":""}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_tablepress_table_visibility]]></wp:meta_key>
+			<wp:meta_value><![CDATA[{"rows":[1,1],"columns":[1,1,1,1,1]}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+</channel>
+</rss>
