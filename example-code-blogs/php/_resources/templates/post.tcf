@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tcf>
+	<title>New Blog Post</title>
+	
+	<variable-list>
+		<!-- general page setup -->
+		<variable name="title" prompt="Post Title" alt="Blog post title."></variable>
+		<variable name="author" prompt="Post Author" alt="Blog post author."></variable>
+		<variable name="email" prompt="Author Email" alt="Email address of the author. If not defined this will use the current OU Campus user email."></variable>
+		<variable name="description" section="Listing Page Post Information" type="text" rows="8" prompt="Post Description" alt="Description of the post that will show up on the listing page."></variable>
+		<!-- A safe way to create a file, forces PCF file extension -->
+		<variable section="File Configuration" name="pcf-filename" prompt="Filename" alt="Enter a filename using only lowercase letters, underscores, or dashes">newfile</variable>
+	</variable-list>
+	
+	<template-list>
+		<template 
+		prompt-prefix="Blog Post"
+		filename="{pcf-filename}"
+		display-group="no"
+		display-filename="no"
+		extension="pcf">post.tmpl</template>
+	</template-list>
+	
+</tcf>

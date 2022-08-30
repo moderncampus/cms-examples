@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/blog/post.xsl" title="Blog Post" extension="php"?>
+<?pcf-stylesheet path="/_resources/xsl/blog/listing-preview.xsl" title="Listing Preview" extension="htm" alternate="yes" publish="no" ?>
+<?pcf-stylesheet path="/_resources/xsl/blog/post-xml.xsl" title="Blog XML" extension="xml" alternate="yes" ?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<!-- Best practice is to have a couple common empty nodes in case a page needs to have page-unique code. These are only editable in source and therefore admins. -->
+	<headcode></headcode> <!-- Output just before closing head tag. -->
+	<bodycode></bodycode> <!-- Output just after opening body tag. -->
+	<footcode></footcode> <!-- Output just before closing body tag. -->
+	
+	<!-- General page properties. Defines user options for page layout. -->
+	<ouc:properties label="config">
+		<!-- Right Column Content -->
+		<parameter section="Right Column Options" name="right-enable" type="select" prompt="Enable Column" alt="Turns on/off the right column." group="Everyone">
+			<option value="true" selected="false">On</option>
+			<option value="false" selected="true">Off</option>
+		</parameter>
+		<parameter name="regions" type="checkbox" prompt="Right Column" alt="Check the boxes to enable the right column content regions." group="Everyone">
+			<option value="panel" selected="false">Panel Region</option>
+			<option value="region" selected="true">Editable Region</option>
+		</parameter>
+		<parameter section="Blog Options" name="disqus-enable" type="select" prompt="Enable Disqus Comments" alt="Turns on/off the disqus comments displayed at the bottom of the post. These comments should only be turned on when the blog post is ready to go live." group="Everyone">
+			<option value="true" selected="true">On</option>
+			<option value="false" selected="false">Off</option>
+		</parameter>
+	</ouc:properties>
+	
+	<!-- Meta page properites. Defines the meta elements that are placed in the head of the HTML document. -->
+	<ouc:properties label="metadata">
+		<title>Lorem ipsum dolor</title>
+		<meta name="Description" content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum." />
+	</ouc:properties>
+	
+	<post-info>	
+		<ouc:div label="post-title" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Title" alt="Title of the post; will show up on the main content region as well as the listing page." section="General Blog Post Information"/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</ouc:div>
+		<ouc:div label="post-author" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Author" alt="Author of the post; Will display below the title and on the listing page."/>Lorem ipsum</ouc:div>
+		<ouc:div label="post-email" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Author Email" alt="Email address of the author. If not defined this will use the current OU Campus user email."/>Lorem@ipsum.com</ouc:div>
+		<ouc:div label="post-date" group="Everyone" button="hide"><ouc:multiedit type="datetime" prompt="Date" alt="The publish date of the post (the time is never displayed, but can be used to dictate the listing order of articles published on the same day)."/>03/01/2015 08:26:09 AM</ouc:div>
+		<ouc:div label="post-display" group="Everyone" button="hide"><ouc:multiedit type="radio" prompt="Display Post" alt="Determines whether to display this post on the Listing Page feeds." options="Display:true;Do Not Display:false;" section="Listing Page Post Information"/>true</ouc:div>
+		<ouc:div label="post-description" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Description" alt="Description of the post that will show up in the listing page." rows="8"/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</ouc:div>
+		<ouc:div label="post-img" group="Everyone" button="hide"><ouc:multiedit type="radio" prompt="Use Image" alt="Determines whether Listing Pages will use an image for this post." options="Image:img;None:none;"/>img</ouc:div>
+		<ouc:div label="post-image" group="Everyone" button="hide"><ouc:multiedit type="image" prompt="Image" alt="Image that will displayed next to the post on the Listing Pages."/><img src="http://placehold.it/81x81" alt="Lorem ipsum" /></ouc:div>	
+		<ouc:div label="post-featured" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Featured Post" alt="Select the box to designate this post as a featured post." options=":true;"/>true</ouc:div>
+	</post-info>
+	
+	<!-- Editable region. An ouc:div defines an editable region so a user can edit content within the WYSIWYG editor. Every ouc:div must have a unique label. 
+	The ouc:editor defines the CSS styling in the WYSIWYG editor for this editable region.
+	More information here: https://support.omniupdate.com/technical-reference/developer/page-tagging.html -->
+	<ouc:div label="maincontent" group="Everyone" button-text="Main Content">
+		<ouc:editor csspath="/_resources/ou/editor/content.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="maincontent" />
+		<p><img style="margin: 15px; float: right;" src="http://placehold.it/81x81" alt="Lorem ipsum" />Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+			<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+			<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+		<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+		<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+		<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+		<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+		<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+		<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+	</ouc:div>
+	
+	<ouc:div label="panel" group="Everyone" button-text="Panel Region">
+		<ouc:editor csspath="/_resources/ou/editor/content.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="rightcontent quicklinks"/>
+	</ouc:div>
+	
+	<ouc:div label="right-content" group="Everyone" button-text="Content Region">
+		<ouc:editor csspath="/_resources/ou/editor/content.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="rightcontent"/>
+		<h5>Related Posts</h5>
+		{{a:44812}}
+		<hr/>
+	</ouc:div>
+</document>

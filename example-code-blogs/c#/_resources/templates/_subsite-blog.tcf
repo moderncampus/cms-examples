@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tcf>
+	<title>New Page</title>
+	
+	<variable-list>
+		<variable section="Folder Information" name="dirname" prompt="Directory Name" alt="Enter the directory name that will be visible in OU Campus and in the URL. No special characters or spaces."></variable>
+		<!-- general page setup -->
+		<variable section="Index Page Setup" name="title" prompt="Listing Title" alt="Enter the page title. This will also be displayed by search engines as well as the web browser window."></variable>
+		<variable name="description" section="Listing Page Post Information" type="text" rows="8" prompt="Post Description" alt="Description of the post that will show up on the listing page."></variable>
+		<variable name="featured" prompt="Featured" type="checkbox" alt="Check the box to enable the featured post content slider." output="xml">
+			<option value="true" selected="true">Featured Slides</option>
+		</variable>
+		<!-- A safer way to create a file, forces PCF file extension -->
+		<variable name="autonavigation" prompt="Add Navigation Item" type="select" alt="Specify if this page should be added to the current directory's navigation automatically.">
+			<option value="true">Yes</option>
+			<option value="false">No</option>
+		</variable>
+	</variable-list>
+	
+	<directory-list>
+		<parent path="{directory/}{dirname}">
+			<directory name="posts" template-group="post">posts</directory>
+		</parent>
+	</directory-list>
+	
+	<template-list>
+		<template destination="{directory/}{dirname}" force-destination="yes" publish="no" filename="_sidenav" extension="inc" display-filename="no" display-group="no" display-overwrite="no" exclude-sitemap="yes" exclude-search="yes">navigation.tmpl</template>
+		<template 
+			prompt-prefix="Page" 
+			filename="index" 
+			display-filename="no"
+			display-group="no"
+			display-overwrite="no"
+			extension="pcf" 
+			destination="{directory/}{dirname}" 
+			force-destination="yes" 
+			preferred-redirect="yes" 
+			autonav="{autonavigation}">listing.tmpl</template>
+	</template-list>
+	
+	<navigation-list>
+		<navigation name="true" path="_nav.inc" group="Everyone" publish="no"><li><a href="{ox_autonav:shorturl}">{title}</a></li></navigation>
+		<navigation name="false" path="_nav.inc" group="Everyone" publish="no"></navigation>
+	</navigation-list>
+</tcf>

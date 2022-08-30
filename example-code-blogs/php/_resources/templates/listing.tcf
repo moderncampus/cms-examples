@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tcf>
+	<title>Blog Listing Page</title>
+	
+	<variable-list>
+		<!-- general page setup -->
+		<variable name="title" prompt="Listing Title" alt="Enter the page title. This will also be displayed by search engines as well as the web browser window."></variable>
+		<variable name="description" section="Listing Page Post Information" type="text" rows="8" prompt="Post Description" alt="Description of the posts that will be displayed on the listing page."></variable>
+		<variable name="featured" prompt="Featured" type="checkbox" alt="Check the box to enable the featured post content slider." output="xml">
+			<option value="true" selected="true">Featured Slides</option>
+		</variable>
+		<variable name="post-year" prompt="Year Filter" alt="Determines the year to filter the landing page to (leave blank for no filter)"></variable>
+		<!-- A safe way to create a file, forces PCF file extension -->
+		<variable section="File Configuration" name="pcf-filename" prompt="Filename" alt="Enter a filename using only lowercase letters, underscores, or dashes">newfile</variable>
+	</variable-list>
+	
+	<template-list>
+		<template 
+		prompt-prefix="Blog Listing"
+		filename="{pcf-filename}"
+		display-group="no"
+		display-filename="no"
+		extension="pcf">listing.tmpl</template>
+	</template-list>
+	
+	<navigation-list>
+		<navigation name="true" path="_nav.inc" group="Everyone" publish="no"><li><a href="{ox_autonav:shorturl}">{title}</a></li></navigation>
+		<navigation name="false" path="_nav.inc" group="Everyone" publish="no"></navigation>
+	</navigation-list>
+	
+</tcf>

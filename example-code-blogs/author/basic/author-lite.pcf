@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/blog/author-lite.xsl" title="Author Page" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<!-- Best practice is to have a couple common empty nodes in case a page needs to have page-unique code. These are only editable in source and therefore admins. -->
+	<headcode></headcode> <!-- Output just before closing head tag. -->
+	<bodycode></bodycode> <!-- Output just after opening body tag. -->
+	<footcode></footcode> <!-- Output just before closing body tag. -->
+	
+	<!-- General page properties. Defines user options for page layout. -->
+	<ouc:properties label="config">
+		
+	</ouc:properties>
+	
+	<!-- Meta page properites. Defines the meta elements that are placed in the head of the HTML document. -->
+	<ouc:properties label="metadata">
+		<title>Author Page</title>
+		<meta name="Description" content="" />
+	</ouc:properties>
+	
+	<author>	
+		<ouc:div label="a-name" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Name" alt="The blog author name."/>Lorem ipsum</ouc:div>
+		<ouc:div label="a-bio" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Biography" alt="A brief biographical description of the author." rows="8"/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</ouc:div>
+		<ouc:div label="use-img" group="Everyone" button="hide"><ouc:multiedit type="radio" prompt="Use Image" alt="Determines whether blog posts will use an image in author sections." options="Yes:yes;No:no;"/>yes</ouc:div>
+		<ouc:div label="a-image" group="Everyone" button="hide"><ouc:multiedit type="image" prompt="Image" alt="Author profile picture (optional)."/><img src="http://placehold.it/150x150" alt="Placeholder" /></ouc:div>
+	</author>
+	
+	<ouc:div label="fake" button="hide" />
+	
+</document>

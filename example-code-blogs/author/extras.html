@@ -1,0 +1,55 @@
+
+<!-- BLOG POST PAGE PROPERTIES - TO ADD TO BLOG POST PCF
+	Add these parameters to the blog post PCF for the Author section 
+-->
+<parameter section="Author" name="enable-bio" group="Everyone" type="select" prompt="Enable Author Bio" alt="Turns on/off the author biography section">
+	<option value="true" selected="true">On</option>
+	<option value="false" selected="false">Off</option>
+</parameter>
+<parameter name="author-type" group="Everyone" type="select" prompt="Author Media Type" alt="Choose between an author file include or an editable region for the bio section.">
+	<option value="file" selected="true">Author File</option>
+	<option value="region" selected="false">Editable Region</option>
+</parameter>
+<parameter name="author" type="filechooser" group="Everyone" prompt="Author File" alt="Choose the author biography file for this blog post.">/blog/authors/author.pcf</parameter>
+
+
+<!-- BLOG POST EDITABLE REGION -
+	Add to blog post PCF -->
+<ouc:div label="author" group="Everyone" button-text="About the Author">
+	<ouc:editor csspath="/_resources/ou/editor/content.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="maincontent"/>
+</ouc:div>
+
+
+
+<!-- BLOG POST AUTHOR XSL 
+	Place the following content inside the blog post XSL where ever the author section is to be displayed.
+-->
+<div class="post-block post-author clearfix">
+	<h3 class="heading-primary"><i class="fa fa-user"></i>Author</h3>
+	<xsl:choose>
+		<xsl:when test="ouc:properties[@label='config']/parameter[@name='author-type']/option[@selected='true']/@value = 'region'">
+			<xsl:apply-templates select="ouc:div[@label='author']"/>
+		</xsl:when>
+		<xsl:otherwise>
+			<xsl:choose>
+				<xsl:when test="doc-available($ou:root || $ou:site || ouc:properties[@label='config']/parameter[@name='author'])" expand-text="yes">
+					<xsl:variable name="author">
+						<xsl:copy-of select="doc($ou:root || $ou:site || ouc:properties[@label='config']/parameter[@name='author'])/document/author"/>
+					</xsl:variable>
+					<xsl:if test="$author/author/ouc:div[@label='use-img'] = 'yes' and $author/author/ouc:div[@label='a-image']/img">
+						<div class="img-thumbnail">
+							<a href="{$listing-path}?author={encode-for-uri($author/author/ouc:div[@label='a-name'])}">
+								<xsl:copy-of select="$author/author/ouc:div[@label='a-image']/img"/>
+							</a>
+						</div>
+					</xsl:if>
+					<p><strong class="name"><a href="{$listing-path}?author={encode-for-uri($author/author/ouc:div[@label='a-name'])}">{$author/author/ouc:div[@label='a-name']}</a></strong></p>
+					<p>{$author/author/ouc:div[@label='a-bio']}</p>
+				</xsl:when>
+				<xsl:otherwise>
+					<p style="color:#e72661;">Unable to load author file. Please ensure the chosen file exists and is an author file.</p>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:otherwise>
+	</xsl:choose>
+</div>

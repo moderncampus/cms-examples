@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/blog/listing.xsl" title="Blog Listing Page;" extension="php"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<!-- Best practice is to have a couple common empty nodes in case a page needs to have page-unique code. These are only editable in source and therefore admins. -->
+	<headcode></headcode> <!-- Output just before closing head tag. -->
+	<bodycode></bodycode> <!-- Output just after opening body tag. -->
+	<footcode>{{a:44820}}</footcode> <!-- Output just before closing body tag. -->
+	
+	<!-- General page properties. Defines user options for page layout. -->
+	<ouc:properties label="config">
+		<parameter name="heading" group="Everyone" prompt="Page Heading" alt="The gist of the page..."><!--%echo var="title" --></parameter>
+		<!-- Right Column Content -->
+		<parameter section="Right Column Options" name="right-enable" type="select" prompt="Enable Column" alt="Turns on/off the right column." group="Everyone">
+			<option value="true" selected="true">On</option>
+			<option value="false" selected="false">Off</option>
+		</parameter>
+		<parameter name="regions" type="checkbox" prompt="Right Column" alt="Check the boxes to enable the right column content regions." group="Everyone">
+			<option value="panel" selected="false">Panel Region</option>
+			<option value="region" selected="true">Editable Region</option>
+		</parameter>
+		<parameter section="Blog Options" name="featured-posts" type="checkbox" prompt="Featured" alt="Check the box to enable the featured post content slider." group="Everyone"><!--%echo var="featured" encoding="none" --></parameter>
+		<parameter name="feature-limit" group="Everyone" prompt="Featured Limit" alt="Determines the maximum amount of featured posts to display.">3</parameter>
+		<parameter name="post-year" group="Everyone" prompt="Year Filter" alt="Determines the year to filter the landing page to (leave blank for no filter)"><!--%echo var="post-year" --></parameter>
+		<parameter name="post-limit" group="Everyone" prompt="Post per Page" alt="Determines the amount of posts to display per page.">3</parameter>
+		<parameter name="search-root" group="Everyone" prompt="Blog Root Directory" alt="Determines to root directory to search for blog posts. (ex. '/blog/'')"></parameter>
+	</ouc:properties>
+	
+	<!-- Meta page properites. Defines the meta elements that are placed in the head of the HTML document. -->
+	<ouc:properties label="metadata">
+		<title><!--%echo var="title" --></title>
+		<meta name="Description" content="<!--%echo var="description" -->" />
+	</ouc:properties>
+	
+	<!-- 	Editable region. An ouc:div defines an editable region so a user can edit content within the WYSIWYG editor. Every ouc:div must have a unique label. 
+			The ouc:editor defines the CSS styling in the WYSIWYG editor for this editable region.
+			More information here: https://support.omniupdate.com/technical-reference/developer/page-tagging.html -->
+	<ouc:div label="maincontent" group="Everyone" button-text="Main Content">
+		<ouc:editor csspath="/_resources/ou/editor/content.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="maincontent" width="1020" />
+	</ouc:div>
+	
+	<ouc:div label="panel" group="Everyone" button-text="Panel Region">
+		<ouc:editor csspath="/_resources/ou/editor/content.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="rightcontent quicklinks" width="1020" />
+	</ouc:div>
+	
+	<ouc:div label="right-content" group="Everyone" button-text="Content Region"><ouc:editor csspath="/_resources/ou/editor/content.css" cssmenu="/_resources/ou/editor/styles.txt" width="1020" wysiwyg-class="rightcontent"/>
+		<h5>Recent Posts</h5>
+		{{a:44417}}
+		<hr/>
+		<h5>Featured Posts</h5>
+		{{a:44416}}
+		<hr/>
+		<h5>Posts Tags</h5>
+		{{a:44418}}
+		<hr/>
+	</ouc:div>
+	
+</document>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/blog/author.xsl" title="Authors Index Page" extension="html"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+
+	<ouc:properties label="config">
+		<parameter section="Page Properties" name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Page title by default.">SCHOOL NAME Authors</parameter>
+		<parameter name="rightCol-toggle" type="checkbox" group="Everyone" prompt="Right Column" alt="Choose to enable right column.">
+<option value="rightCol-enable" selected="true">Right Column Enable</option>
+</parameter>
+	</ouc:properties>
+
+	<ouc:properties label="metadata">
+		<title>School Name - Authors</title>
+		<meta name="Description" content="" />			
+		<meta name="Keywords" content="" />		
+	</ouc:properties>
+
+	<ouc:div label="maincontent" group="Everyone" button="784" break="break" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/maincontent.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="maincontent"/><h1><span style="color: #000000;">News Contributors</span></h1>
+<p>We will/should add some introductory comments here.&nbsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl metus, faucibus et consequat fermentum, eleifend id dolor. Suspendisse volutpat ligula ut ornare vulputate. Fusce lacinia risus vel convallis bibendum. Duis vestibulum massa nec est egestas accumsan. Nulla vestibulum fringilla sapien in suscipit. Integer non facilisis purus, nec semper augue. </p>
+<p>&nbsp;</p>
+
+	</ouc:div>
+
+	<ouc:div label="rightcontent" group="Everyone" button="784" break="break" button-text="Right Content"><ouc:editor csspath="/_resources/ou/editor/maincontent.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="rightcontent"/></ouc:div>
+
+</ouc:div>	
+
+</document>
+

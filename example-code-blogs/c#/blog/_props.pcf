@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?pcf-stylesheet path="/_resources/xsl/properties.xsl" title="Properties" extension="html"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	<ouc:properties label="config">
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Section Title" alt="Enter the  friendly name for the section's breadcrumb.">Blog</parameter>
+	</ouc:properties>
+</document>

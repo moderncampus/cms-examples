@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/blog/listing.xsl" title="Blog Listing Page;" extension="aspx"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	
+	<!-- Best practice is to have a couple common empty nodes in case a page needs to have page-unique code. These are only editable in source and therefore admins. -->
+	<headcode></headcode> <!-- Output just before closing head tag. -->
+	<bodycode></bodycode> <!-- Output just after opening body tag. -->
+	<footcode></footcode> <!-- Output just before closing body tag. -->
+	
+	<!-- General page properties. Defines user options for page layout. -->
+	<ouc:properties label="config">
+		<parameter name="heading" group="Everyone" prompt="Page Heading" alt="The heading to appear at the top of the page.">Heading</parameter>
+		<!-- Right Column Content -->
+		<parameter section="Right Column Options" name="right-enable" type="select" prompt="Enable Column" alt="Turns on/off the right column." group="Everyone">
+<option value="true" selected="true">On</option>
+<option value="false" selected="false">Off</option>
+</parameter>
+		<parameter name="regions" type="checkbox" prompt="Right Column" alt="Check the boxes to enable the right column content regions." group="Everyone">
+<option value="panel" selected="false">Panel Region</option>
+<option value="region" selected="true">Editable Region</option>
+</parameter>
+		<parameter section="Blog Options" name="search-root" group="Everyone" prompt="Blog Root Directory" alt="Determines to root directory to search for blog posts (eg. '/blog/'). Default value is the current directory."></parameter>
+		<parameter name="featured-posts" type="checkbox" prompt="Featured" alt="Check the box to enable the featured post content slider." group="Everyone">
+<option value="true" selected="true">Featured Slides</option>
+</parameter>
+		<parameter name="feature-limit" group="Everyone" prompt="Featured Limit" alt="Determines the maximum amount of featured posts to display.">2</parameter>
+		<parameter name="post-year" group="Everyone" prompt="Year Filter" alt="Specify a year to filter the listing page results (leave blank for no filter)."></parameter>
+		<parameter name="post-author" group="Everyone" prompt="Author Filter" alt="Specify an author to filter the listing page results (leave blank for no filter)."></parameter>
+		<parameter name="post-limit" group="Everyone" prompt="Post per Page" alt="Determines the amount of posts to display per page.">4</parameter>
+		<parameter name="tag-filter-strength" group="Everyone" type="select" prompt="Tag Filter Strength" alt="Determines if blog posts must have all matching tags or at least one matching tag to be included in the listing.">
+			<option value="loose" selected="true">At Least One</option>
+			<option value="strict" selected="false">All Tags</option>
+		</parameter>
+	</ouc:properties>
+	
+	<!-- Meta page properites. Defines the meta elements that are placed in the head of the HTML document. -->
+	<ouc:properties label="metadata">
+		<title>Blog</title>
+		<meta name="Description" content="OU Blogs" />
+	</ouc:properties>
+	
+	<!-- 	Editable region. An ouc:div defines an editable region so a user can edit content within the WYSIWYG editor. Every ouc:div must have a unique label. 
+			The ouc:editor defines the CSS styling in the WYSIWYG editor for this editable region.
+			More information here: https://support.omniupdate.com/technical-reference/developer/page-tagging.html -->
+	<ouc:div label="maincontent" group="Everyone" button-text="Main Content">
+		<ouc:editor csspath="/_resources/ou/editor/content.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="maincontent" width="1020" />
+	</ouc:div>
+	
+	<ouc:div label="panel" group="Everyone" button-text="Panel Region">
+		<ouc:editor csspath="/_resources/ou/editor/content.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="rightcontent quicklinks" width="1020" />
+	</ouc:div>
+	
+	<ouc:div label="right-content" group="Everyone" button-text="Content Region"><ouc:editor csspath="/_resources/ou/editor/content.css" cssmenu="/_resources/ou/editor/styles.txt" width="1020" wysiwyg-class="rightcontent"/>
+		<h5>Recent Posts</h5>
+		{{a:44417}}
+		<hr/>
+		<h5>Featured Posts</h5>
+		{{a:44416}}
+		<hr/>
+		<h5>Posts Tags</h5>
+		{{a:44418}}
+		<hr/>
+	</ouc:div>
+
+</document>
