@@ -1,0 +1,23 @@
+/*
+ * OU Styles for the Fancybox Gallery to improve the keyboard access. When Fancybox elements have focus (using keyboard or clicks), they are visibily different.
+ *
+ */
+
+.fancybox-container button:focus:not([disabled]):not(.fancybox-arrow) {
+	outline: none;
+	color: #fff !important;
+	background: #007095 !important;
+}
+
+.fancybox-container button.fancybox-arrow:focus {
+	outline: none;
+}
+.fancybox-container button.fancybox-arrow:focus::after {
+	background-color: #007095 !important;
+}
+
+.fancybox-container:focus img {
+	border: 1px solid #007095 !important;
+}
+
+.fancybox-container [disabled] { display: none; }
