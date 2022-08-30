@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?pcf-stylesheet path="/_resources/xsl/catalog/web/interior.xsl" title="Web" extension="html"?>
+<?pcf-stylesheet path="/_resources/xsl/catalog/pdf/regulatory.xsl" title="PDF" extension="pdf" alternate="yes" ?>
+<?pcf-stylesheet path="/_resources/xsl/catalog/pdf/regulatory.xsl" title="XML" extension="xml" publish="no" alternate="yes" ?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	<headcode></headcode>
+	<bodycode></bodycode>
+	<footcode></footcode>
+	
+	<ouc:properties label="metadata">
+		<title>Scholarships</title>
+		<meta name="Description" content="" />
+		<meta name="Keywords" content="" />
+	</ouc:properties>
+	
+	<ouc:properties label="config">
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Please enter the page heading.">Scholarships</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Scholarships</parameter>
+	</ouc:properties>
+
+	<ouc:properties label="pdf-config">
+		<parameter section="Full PDF Control" group="Everyone" name="full-pdf" type="radio" prompt="Full PDF" alt="Choose to or not display this page in the full PDF.">
+			<option value="true" selected="true">Display</option>
+			<option value="false" selected="false">Do Not Display</option>
+		</parameter>
+		<parameter name="index-keywords" type="text" group="Everyone" prompt="Index Keywords" alt="Enter a keyword or short list to relate this page with in the catalog in the full PDF.">Scholarships</parameter>
+		<parameter name="page-weight" group="Everyone" prompt="Page Weight" alt="Selects the weight of the page; for ordering purposes in the full PDF." >100</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="pdf-metadata">
+		<parameter section="PDF Meta Data" name="meta-title" type="text" group="Everyone" prompt="PDF Title" alt="Enter PDF title. Defaults to page title if blank."></parameter>
+		<parameter name="meta-author" type="text" group="Everyone" prompt="PDF Author" alt="Enter PDF author."></parameter>
+		<parameter name="meta-subject" type="text" group="Everyone" prompt="PDF Subject" alt="Enter PDF subject. Defaults to meta description if blank."></parameter>
+		<parameter name="meta-keywords" type="text" group="Everyone" prompt="PDF Keywords" alt="Enter PDF keywords."></parameter>
+	</ouc:properties>
+	
+	<ouc:div label="maincontent" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="maincontent"/><p>Globally actualize ethical applications through future-proof channels. Rapidiously productivate worldwide e-tailers through multidisciplinary users. Progressively empower best-of-breed core competencies after cross-platform action items. Interactively synergize client-based "outside the box" thinking with robust applications. Seamlessly reintermediate timely resources rather than top-line e-markets.</p>
+		<ul style="list-style-type: circle;">
+			<li>While in High School</li>
+			<li>Transfer Student</li>
+			<li>Academic</li>
+			<li>Need</li>
+		</ul></ouc:div>
+	
+</document>

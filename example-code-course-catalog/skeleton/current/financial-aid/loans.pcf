@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?pcf-stylesheet path="/_resources/xsl/catalog/web/interior.xsl" title="Web" extension="html"?>
+<?pcf-stylesheet path="/_resources/xsl/catalog/pdf/regulatory.xsl" title="PDF" extension="pdf" alternate="yes" ?>
+<?pcf-stylesheet path="/_resources/xsl/catalog/pdf/regulatory.xsl" title="XML" extension="xml" publish="no" alternate="yes" ?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	<headcode></headcode>
+	<bodycode></bodycode>
+	<footcode></footcode>
+	
+	<ouc:properties label="metadata">
+		<title>Loans</title>
+		<meta name="Description" content="" />
+		<meta name="Keywords" content="" />
+	</ouc:properties>
+	
+	<ouc:properties label="config">
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Please enter the page heading.">Loans</parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default.">Loans</parameter>
+		<parameter section="Full PDF Control" name="full-pdf" type="radio" prompt="Full PDF" alt="Choose to or not display this page in the full PDF.">
+			<option value="true" selected="true">Display</option>
+			<option value="false" selected="false">Do Not Display</option>
+		</parameter>
+		<parameter name="index-keywords" type="text" group="Everyone" prompt="Index Keywords" alt="Enter a keyword or short list to relate this page with in the catalog in the full PDF.">Loans, Unsubsidized Loans, Subsidized Loans</parameter>
+		<parameter name="page-weight" prompt="Page Weight" alt="Selects the weight of the page; for ordering purposes in the full PDF." >0</parameter>
+	</ouc:properties>
+
+	<ouc:properties label="pdf-config">
+		<parameter section="Full PDF Control" group="Everyone" name="full-pdf" type="radio" prompt="Full PDF" alt="Choose to or not display this page in the full PDF.">
+			<option value="true" selected="false">Display</option>
+			<option value="false" selected="true">Do Not Display</option>
+		</parameter>
+		<parameter name="index-keywords" type="text" group="Everyone" prompt="Index Keywords" alt="Enter a keyword or short list to relate this page with in the catalog in the full PDF.">Loans, Unsubsidized Loans, Subsidized Loans</parameter>
+		<parameter name="page-weight" group="Everyone" prompt="Page Weight" alt="Selects the weight of the page; for ordering purposes in the full PDF." >0</parameter>
+	</ouc:properties>
+
+	<ouc:properties label="pdf-metadata">
+		<parameter section="PDF Meta Data" name="meta-title" type="text" group="Everyone" prompt="PDF Title" alt="Enter PDF title. Defaults to page title if blank."></parameter>
+		<parameter name="meta-author" type="text" group="Everyone" prompt="PDF Author" alt="Enter PDF author."></parameter>
+		<parameter name="meta-subject" type="text" group="Everyone" prompt="PDF Subject" alt="Enter PDF subject. Defaults to meta description if blank."></parameter>
+		<parameter name="meta-keywords" type="text" group="Everyone" prompt="PDF Keywords" alt="Enter PDF keywords."></parameter>
+	</ouc:properties>
+	
+	<ouc:div label="maincontent" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="maincontent"/><p>Globally actualize ethical applications through future-proof channels. Rapidiously productivate worldwide e-tailers through multidisciplinary users. Progressively empower best-of-breed core competencies after cross-platform action items. Interactively synergize client-based "outside the box" thinking with robust applications. Seamlessly reintermediate timely resources rather than top-line e-markets.</p>
+		<h2>Subsidized Loans</h2>
+		<p>Professionally pontificate integrated processes for customer directed markets. Enthusiastically actualize intuitive e-tailers before reliable markets. Dynamically strategize unique applications rather than team building data. Efficiently fabricate user-centric functionalities for performance based expertise. Rapidiously streamline real-time process improvements through exceptional web services.</p>
+		<h2>Unsubsidized Loans</h2>
+		<p>Quickly evolve clicks-and-mortar benefits after fully researched e-services. Professionally promote client-centered initiatives vis-a-vis error-free platforms. Uniquely streamline prospective e-services without future-proof supply chains. Quickly procrastinate e-business applications via quality technologies. Interactively repurpose synergistic expertise and standardized e-services.</p>
+		<p>Proactively innovate high-quality alignments vis-a-vis performance based data. Rapidiously cultivate go forward sources vis-a-vis cross-media benefits. Dramatically architect top-line quality vectors with effective materials. Enthusiastically enhance impactful e-business for B2B collaboration and idea-sharing. Continually recaptiualize market-driven processes after low-risk high-yield sources.</p>
+		<p>&nbsp;</p>
+		<h2>Repayment</h2>
+		<p>Interactively target backend methods of empowerment after integrated opportunities. Dramatically mesh world-class strategic theme areas rather than cross-unit portals. Intrinsicly engineer enterprise applications whereas fully researched systems. Credibly integrate corporate meta-services rather than backward-compatible functionalities. Authoritatively provide access to high-quality sources through extensible methodologies.</p>
+		<ul style="list-style-type: disc;">
+			<li>Income-Based</li>
+			<li>Deferral</li>
+			<li>Forgiveness</li>
+		</ul>
+		<p>Collaboratively harness out-of-the-box content rather than resource maximizing infrastructures. Enthusiastically redefine technically sound deliverables vis-a-vis competitive e-commerce. Enthusiastically promote market positioning products vis-a-vis corporate partnerships. Proactively synthesize professional scenarios and just in time users. Distinctively innovate emerging sources for cross-media services.</p>
+		<p>Interactively predominate high-payoff materials without multidisciplinary imperatives. Efficiently unleash resource sucking convergence without sticky markets. Rapidiously orchestrate unique catalysts for change after frictionless products. Professionally simplify one-to-one internal or "organic" sources rather than viral platforms. Phosfluorescently recaptiualize high-payoff quality vectors whereas process-centric channels.</p>
+		<p>Professionally target intermandated products and e-business alignments. Continually build functionalized leadership before progressive human capital. Completely reinvent cross-media applications with pandemic alignments. Assertively streamline premium information vis-a-vis sustainable value. Interactively create customer directed core competencies for customer directed expertise.</p></ouc:div>
+	
+</document>

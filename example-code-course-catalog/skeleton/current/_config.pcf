@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?pcf-stylesheet path="/_resources/xsl/catalog/_shared/properties-preview.xsl" publish="no" title="Catalog Configuration" extension="html"?>
+<?pcf-stylesheet path="/_resources/xsl/catalog/xml/reformat-xml.xsl" title="Reformatted XML Output" extension="xml" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	<ouc:properties label="config">
+		<parameter name="xml-source" type="filechooser" prompt="XML Source" alt="Select the file to import catalog data from. ">/current/_data/catalogexport_937954.xml</parameter>
+		<parameter name="first-page" type="filechooser" prompt="First Page Image" alt="Select the image file for the first page of the course catalog.">/current/_data/first.png</parameter>
+		<parameter name="last-page" type="filechooser" prompt="Last Page Image" alt="Select the image file for the last page of the course catalog.">/current/_data/last.png</parameter>
+		<parameter name="catalog-heading" type="text" prompt="School Heading" alt="Enter the heading to appear in various parts of the catalog.">College Heading</parameter>
+		<parameter name="catalog-title" type="text" prompt="Catalog Title" alt="Enter the name of the course catalog to appear in various parts of the catalog.">Course Catalog and Student Handbook </parameter>
+		<parameter name="catalog-years" type="text" prompt="Catalog Year" alt="Enter the catalog year to appear in various parts of the catalog"> 2014-2015</parameter>	
+	</ouc:properties>
+</document>

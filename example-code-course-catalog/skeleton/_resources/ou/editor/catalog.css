@@ -1,0 +1,47 @@
+img[class ^= "ou-exclude-web"], img[class ^= "ou-exclude-pdf"] {
+	opacity: 0.5;
+}
+
+[class ^= "ou-exclude-pdf"], [class ^= "ou-exclude-web"] {
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 20px auto;
+	border-style: solid;
+	border-radius: 4px;
+	border-width: 1px;
+	padding-left: 2em;
+}
+
+[class ^= "ou-exclude-pdf"] {
+	background-image: url('exclude_pdf.png');	
+	background-color: #FFCDCD;	
+	border-color: #FC9393;	
+	color: #8B0000;
+}
+
+[class ^= "ou-exclude-web"] {
+	background-image: url('exclude_web.png');
+	background-color: #D6EFF7;
+	border-color: #A0DDE2;
+	color: #4F2FF8;
+}
+
+hr.ou-catalog-page-break,hr.ou-catalog-column-break {
+	background-color: #fff;
+	margin: 3em 0;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 2px;
+	height: 2em;
+	color: #ddd;
+}
+
+hr.ou-catalog-page-break:before, hr.ou-catalog-column-break:before {
+	content: 'PDF Page Break';
+	font-style: italic;
+	color: #717171;
+}
+
+hr.ou-catalog-column-break:before {
+	content: 'PDF Column Break';
+}

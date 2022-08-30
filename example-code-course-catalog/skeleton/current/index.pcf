@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?pcf-stylesheet path="/_resources/xsl/catalog/web/interior.xsl" title="Web" extension="html"?>
+<?pcf-stylesheet path="/_resources/xsl/catalog/pdf/regulatory.xsl" title="PDF" extension="pdf" alternate="yes" ?>
+<?pcf-stylesheet path="/_resources/xsl/catalog/pdf/regulatory.xsl" title="XML" extension="xml" publish="no" alternate="yes" ?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	<headcode></headcode>
+	<bodycode></bodycode>
+	<footcode></footcode>
+	
+	<ouc:properties label="metadata">
+		<title>University Catalog</title>
+		<meta name="description" content="Oral Roberts University, University Catalog" />
+	</ouc:properties>
+	
+	<ouc:properties label="pdf-config">
+		<parameter section="Full PDF Control" group="Everyone" name="full-pdf" type="radio" prompt="Full PDF" alt="Choose to or not display this page in the full PDF.">
+			<option value="true" selected="false">Display</option>
+			<option value="false" selected="true">Do Not Display</option>
+		</parameter>
+		<parameter name="index-keywords" type="text" group="Everyone" prompt="Index Keywords" alt="Enter a keyword or short list to relate this page with in the catalog in the full PDF."></parameter>
+		<parameter name="page-weight" group="Everyone" prompt="Page Weight" alt="Selects the weight of the page; for ordering purposes in the Full PDF." >-1000</parameter>
+	</ouc:properties>
+	
+	<ouc:properties label="pdf-metadata">
+		<parameter section="PDF Meta Data" name="meta-title" type="text" group="Everyone" prompt="PDF Title" alt="Enter PDF title. Defaults to page title if blank."></parameter>
+		<parameter name="meta-author" type="text" group="Everyone" prompt="PDF Author" alt="Enter PDF author."></parameter>
+		<parameter name="meta-subject" type="text" group="Everyone" prompt="PDF Subject" alt="Enter PDF subject. Defaults to meta description if blank."></parameter>
+		<parameter name="meta-keywords" type="text" group="Everyone" prompt="PDF Keywords" alt="Enter PDF keywords."></parameter>
+	</ouc:properties>
+	
+	<ouc:div label="maincontent"  group="Everyone"  button-class="oucEditButton" button-text="Main Content"  break="break">
+		<ouc:editor wysiwyg-class="maincontent" csspath="/_resources/ou/editor/maincontent.css" width="955" />
+		<p>Be INSPIRED by some of the world's most anointed speakers, REFRESHED through passionate praise and worship by ORU LIVE, and EMPOWERED by connecting with fellow world-changers&mdash;all to strengthen your Kingdom impact at this <strong style="color: #FC6C02;">FREE</strong> event.<br />
+		<br />Hear the Word and learn how to communicate effectively in this new era. Spend time in the presence of God and be renewed.<br />
+		<br />ORU Ignite is for ALL believers who are called to the work of the ministry of Jesus Christ&mdash;from every walk of life, denomination, and generation. This conference will change the way you experience and deliver ministry to a hurting world.<br />
+		<br />This free event will be held in Christ's Chapel on the campus of Oral Roberts University. You must register by <strong style="color: #FC6C02;">March 25, 2013</strong>.</p>
+	</ouc:div>
+	
+	
+	
+</document>

@@ -1,0 +1,4 @@
+.ou-exclude-pdf	Exclude from PDF (Inline)
+.ou-exclude-web	Exclude from Web (Inline)
+.ou-exclude-pdf-block	Exclude from PDF (Block)	block
+.ou-exclude-web-block	Exclude from Web (Block)	block

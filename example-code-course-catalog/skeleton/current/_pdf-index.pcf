@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?pcf-stylesheet path="/_resources/xsl/catalog/_shared/properties-preview.xsl" title="Properties" extension="aspx"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	<ouc:properties label="config">
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Title" alt="Enter heading to appear above page content.">Index</parameter>
+		<parameter section="Full PDF Control" name="full-pdf" type="radio" group="Everyone" prompt="Full PDF" alt="Choose to or not display this page in the full PDF.">
+			<option value="true" selected="true">Display</option>
+			<option value="false" selected="false">Do Not Display</option>
+		</parameter>
+		<parameter name="page-weight" group="Everyone" prompt="Page Weight" alt="Selects the weight of the page; for ordering purposes in the full PDF.">0</parameter>
+	</ouc:properties>
+</document>
