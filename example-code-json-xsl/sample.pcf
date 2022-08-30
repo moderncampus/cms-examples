@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/xsl/sample-web.xsl" title="Web Page Output" extension="html"?>
+<?pcf-stylesheet path="/xsl/sample-json.xsl" title="JSON Output" extension="json" alternate="yes"?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+
+	<ouc:properties label="metadata">
+		<title>Sample JSON Data</title>
+		<meta name="Description" content="" />
+	</ouc:properties>
+
+	<ouc:properties label="config">
+		<parameter group="Everyone" name="heading">Sample JSON Output</parameter>
+	</ouc:properties>
+	<ouc:properties label="event-admin">
+		<parameter group="Event Admin" name="contactForm" type="asset" tags="type:form" section="Event Admin Control" prompt="Contact Form" alt="Set the contact form asset to use on the page. The contact information must be filled out in the MultiEdit field."></parameter>
+		<parameter group="Event Admin" name="status" type="checkbox" prompt="Event Status" alt="Approve the event to publish the event data. When the hidden box is checked, the event will only display in specific lists.">
+			<option value="isApproved" selected="true">Approved</option>
+			<option value="hidden" selected="false">Hide from Main Listing</option>
+		</parameter>
+		<parameter group="Event Admin" name="selectExample" type="select" prompt="Dropdown Example" alt="An example dropdown field to show how a select element can be converted to JSON.">
+			<option value="value1" selected="true">Value 1</option>
+			<option value="value2" selected="false">Value 2</option>
+			<option value="value3" selected="false">Value 3</option>
+		</parameter>
+	</ouc:properties>
+
+	<data type="event">
+		<ouc:div label="work-in-progress" group="Everyone" button="hide"><ouc:multiedit type="checkbox" options="Yes:true" prompt="Work in Progress" alt="Check the box when the data is not ready to be aggregated." section="Data Management"/></ouc:div>
+		<ouc:div label="name" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Name" alt="Enter a name for the event." section="General Event Information"/>Game Night</ouc:div>
+		<ouc:div label="description" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Description" alt="Enter a short description of the event."/>Suspendisse ante nostra a vehicula inceptos quis fusce parturient a ut condimentum placerat nascetur diam a aliquam sed maecenas duis posuere dolor adipiscing nec. Aliquet in nostra a neque scelerisque at malesuada curae dignissim arcu est netus a vestibulum varius a ligula pretium. Ut cum ullamcorper tristique eu condimentum cras penatibus parturient quis donec velit condimentum torquent a cursus fringilla bibendum sagittis augue montes montes ut mi. Suspendisse penatibus et a ullamcorper a a adipiscing euismod ac nisi ullamcorper ac himenaeos congue elementum.</ouc:div>
+		<ouc:div label="location" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Location" alt="Enter the location of the event."/>Anaheim, CA</ouc:div>
+		<ouc:div label="categories" group="Everyone" button="hide"><ouc:multiedit type="checkbox" prompt="Categories" alt="Choose the appropriate categories." options="Academic:academic;Social:social;Entertainment:entertainment;Music:music"/>social</ouc:div>
+		<ouc:div label="dateStart" group="Everyone" button="hide"><ouc:multiedit type="date" prompt="Start Date" alt="Set the start date for the event." section="Event Times"/>04/26/2019</ouc:div>
+		<ouc:div label="timeStart" group="Everyone" button="hide"><ouc:multiedit type="time" prompt="Start Time" alt="Set the start time for the event. Leave it empty if it is an all day event."/>11:00</ouc:div>
+		<ouc:div label="dateEnd" group="Everyone" button="hide"><ouc:multiedit type="date" prompt="End Date" alt="Set the end date for the event. You may leave this field empty if it is not a multiday event."/>04/26/2019</ouc:div>
+		<ouc:div label="timeEnd" group="Everyone" button="hide"><ouc:multiedit type="time" prompt="End Time" alt="Set the end time for the event. This field is ignored if the start time is empty."/>13:00</ouc:div>
+		<ouc:div label="smallThumbnail" group="Everyone" button="hide"><ouc:multiedit type="image" prompt="Thumbnail (Small)" alt="Choose a small image to use as the thumbnail for event lists." dependency="yes" section="Event Images (Optional)"/><img src="" alt="" /></ouc:div>
+		<ouc:div label="largeThumbnail" group="Everyone" button="hide"><ouc:multiedit type="image" prompt="Thumbnail (Large)" alt="Choose a large image to use as the thumbnail for featured events." dependency="yes"/><img src="" alt="" /></ouc:div>
+		<ouc:div label="contactName" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Contact Name" alt="Enter a name for the point of contact." section="Contact Information (Optional)"/>Jane Doe</ouc:div>
+		<ouc:div label="contactEmail" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Contact Email" alt="Enter an email to forward messages submitted from the contact form."/>jdoe@email.com</ouc:div>
+	</data>
+
+	<ouc:div label="maincontent" group="Everyone" button-text="Main Content">
+		<ouc:editor csspath="/workshop-data-output/_resources/ou/editor/wysiwyg.css" cssmenu="/workshop-data-output/_resources/ou/editor/styles.txt" wysiwyg-class="maincontent"/>
+		<h2>Basic block level elements</h2>
+		<p>This is a normal paragraph (<code>p</code>&nbsp;element). To add some length to it, let us mention that this page was primarily written for testing the effect of&nbsp;<strong>user style sheets</strong>. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.</p>
+		<p>This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.</p>
+		<div>This is a&nbsp;<code>div</code>&nbsp;element. Authors may use such elements instead of paragraph markup for various reasons. (End of&nbsp;<code>div</code>.)</div>
+		<blockquote>
+			<p>This is a block quotation containing a single paragraph. Well, not quite, since this is not&nbsp;<em>really</em>&nbsp;quoted text, but I hope you understand the point. After all, this page does not use HTML markup very normally anyway.</p>
+		</blockquote>
+	</ouc:div>
+
+</document>
