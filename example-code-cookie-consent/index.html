@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Consent Sample</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+</head>
+
+<body>
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" style="background-color: #FF5C39;">
+        <div class="container">
+            <a href="https://moderncampus.com/"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <span class="fs-4 text-white">Modern Campus</span>
+            </a>
+        </div>
+    </header>
+    <main class="flex-shrink-0">
+        <div class="container">
+            <h1>Cookie Consent Sample</h1>
+            <p>This is a sample of using the <a href="https://www.osano.com/cookieconsent"
+                    title="Osano cookie consent library page" target="_blank">Osano cookie consent
+                    library</a> to set up a cookie consent bar for your
+                website as seen at the bottom of this page. It is <a
+                    href="https://github.com/osano/cookieconsent/blob/dev/LICENSE"
+                    title="Osano cookie consent license information" target="_blank">licensed under MIT</a>, so it is
+                free for personal and commercial use.</p>
+            <p>An easy way to configure the position, design, and content of the consent bar is actually using the osano
+                site's configure form. Visit their <a href="https://www.osano.com/cookieconsent/download/"
+                    title="Osano Consent Download Page" target="_blank">download page</a> and click on the "Start
+                Coding" button to open
+                up their configuring form and follow the direction on the page.</p>
+            <p>The code used to enable the cookie bar is shown below.</p>
+            <p>Place this inside headcode.inc (usually located at <code
+                    class="bg-light">/_resources/includes/headcode.inc</code>):</p>
+            <pre
+                class="bg-dark text-light p-3">&lt;link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" /></pre>
+            <p>Place this inside footcode.inc (usually located at <code
+                    class="bg-light">/_resources/includes/footcode.inc</code>):</p>
+            <pre class="bg-dark text-light p-3">
+&lt;script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+&lt;script>
+    window.cookieconsent.initialise({
+        "palette": {
+            "popup": {
+                "background": "#64386b",
+                "text": "#ffcdfd"
+            },
+            "button": {
+                "background": "#f8a8ff",
+                "text": "#3f0045"
+            }
+        },
+        "theme": "edgeless"
+    });
+&lt;/script></pre>
+
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#64386b",
+                    "text": "#ffcdfd"
+                },
+                "button": {
+                    "background": "#f8a8ff",
+                    "text": "#3f0045"
+                }
+            },
+            "theme": "edgeless"
+        });
+    </script>
+</body>
+
+</html>
