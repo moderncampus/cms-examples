@@ -1,0 +1,230 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html.gadget main {
+  background: transparent;
+}
+
+html, body {
+  background: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  html, body {
+    font-size: 16px;
+  }
+}
+
+.flex-container {
+  display: flex;
+  height: 100%;
+}
+
+aside {
+  display: none;
+  background: rgba(0, 128, 128, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  aside {
+    display: block;
+    min-width: 250px;
+    max-width: 400px;
+    width: 40%;
+    height: 100%;
+    border-right: solid 3px black;
+  }
+}
+
+section {
+  padding: .5em;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    padding-top: 1.8em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+  }
+}
+
+main {
+  width: 100%;
+  /* background: salmon; */
+  padding: .8em;
+}
+
+.canvas-wrapper {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  margin-top: 6em;
+}
+
+#input-form {
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  #input-form {
+    position: absolute;
+    margin-left: 1.8em;
+    margin-top: 1.8em;
+    max-width: 480px;
+    opacity: .4;
+  }
+  #input-form:hover {
+    opacity: 1;
+  }
+}
+
+#input-form input[type=file].filechooser:first-child:last-child {
+  background: rgba(255, 255, 255, 0.667);
+  width: 100%;
+  padding: .5em;
+  border: 1px dashed #ccc;
+}
+
+#submit-form {
+  display: block;
+  bottom: 0;
+  margin-bottom: .5em;
+}
+
+#submit-form input[type=checkbox] {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+#preview-frame {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+}
+
+ul.image-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  line-height: 1.1;
+}
+
+@media screen and (min-width: 768px) {
+  ul.image-list {
+    line-height: 1.6;
+  }
+}
+
+ul.image-list .image-item > ul.size-list {
+  margin-left: 1em;
+  padding-left: 0;
+  list-style: none;
+}
+
+ul.image-list .image-item > ul.size-list li::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+  width: 1em;
+}
+
+/****** Added for UI updates [START] ******/
+#main button[type="submit"] {
+	display: none;
+}
+body { padding: 0 8px 8px; }
+#user-message {
+	width: 100%;
+	margin-left: -8px;
+	position: fixed;
+	z-index: 2;
+	bottom: -100px;
+	margin-bottom: 0;
+	-webkit-transition: bottom .3s ease-out 0s;
+	-moz-transition: bottom .3s ease-out 0s;
+	-o-transition: bottom .3s ease-out 0s;
+	transition: bottom .3s ease-out 0s;
+}
+
+#input-form { display: none; }
+
+.badge {
+	position: absolute;
+	top: 0;
+	right:	-1px;
+	padding: .15em .4em .25em;
+	border-radius: 0 0 0 .25rem;
+}
+
+.badge-light { background-color: #deeeff; }
+
+#user-message span.message { white-space: nowrap }
+
+#user-message.slide-up { bottom: 0px; }
+#user-message.slide-up span.message { white-space: normal; }
+/* li.exists { color: red; } */
+li.uploaded { color: yellow; }
+li.published { color: green; }
+
+/* i.glyphicon.glyphicon-ok { color: #008000; } */
+/* i.glyphicon.glyphicon-info-sign { color: #ff9f0b; } */
+
+#output ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+#output ul li i {
+	width: 15px;
+	display: inline-block;
+}
+
+div.card { margin-top: 10px; }
+div.card:last-child { margin-bottom: 10px; }
+div.card .card-header { font-weight: bold; }
+
+@media screen and (max-width: 300px) {
+	main { padding: 0; }
+	#list-card .card-header span { display: none; }
+}
+
+.container { padding: 0; }
+
+
+/* manage preset styles [START] */
+.tooltip-inner { white-space: pre-wrap; } /* allows line breaks */
+input.invalid, input.invalid:focus { background-color: #ffbbbb; }
+#form-card { display: none; margin-bottom: 10px; }
+
+#list-card { margin-bottom: 10px; }
+#list-card form { margin-top: 16px; }
+#list-card .list-group-item { cursor: pointer; }
+#list-card .list-group-item:hover { background-color: #D3D3D3;}
+
+#list-card .list-group-item a,
+#list-card .add-preset { color: #585858; }
+
+#list-card .card-header a:hover { text-decoration: none; }
+
+#list-card .list-group-item span.options { display: none; }
+#list-card .list-group-item:hover span.options { display: inline; }
+
+
+.screen { display: none; }
+#main { display: block; }
+#input-form .input-group { margin-bottom: 10px; }
+#input-form .input-group-append { display: none; }
+
+/* manage preset styles [END] */
+
+/****** Added for UI updates [END] ******/

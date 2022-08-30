@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Image Resizer</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/css/styles.min.css">
+</head>
+
+<body>
+	<div class="flex-container sidebar screen" id="main">
+		<main>
+			<form id="input-form">
+				<div class="input-group">
+					<select id="preset-dropdown" class="form-control">
+						<option value="">- Choose Preset -</option>
+					</select>
+					<div class="input-group-append">
+						<button class="btn" type="button" id="manage-presets-btn" title="Manage Presets (Admins Only)"><i class="fas fa-edit"></i></button>
+					</div>
+				</div>
+				<div class="static">
+					<input tabindex="1" name="images" id="images" type="file" accept="image/*" multiple class="form-control filechooser" />
+				</div>
+			</form>
+			<div id="output"></div>
+			<form id="submit-form">
+
+				<button type="submit" class="btn btn-primary">Upload / Publish</button>
+			</form>
+		</main>
+	</div>
+	
+	<div class="container">
+		<div class="card screen" id="form-card">
+			<div class="card-header">Add Preset</div>
+			<div class="card-body">
+				<form id="manage-presets">
+					<div class="form-group">
+						<label for="presetName">Preset Name</label>
+						<input type="text" class="form-control" id="presetName" autocomplete="off">
+					</div>
+					<button type="submit" class="btn btn-primary">OK</button>
+					<button type="button" class="btn btn-secondary cancel">Cancel</button>
+					<input type="hidden" name="presetID" value="" />
+				</form>
+			</div>
+		</div>
+
+		<div id="list-card" class="screen">
+			<div class="card">
+				<div class="card-header">Manage Presets <a href="#" class="float-right add-preset"><i class="fas fa-plus"></i> <span>Add Preset</span></a></div>
+				<ul class="list-group list-group-flush"></ul>
+			</div>
+			<form>
+				<button type="button" class="btn btn-primary save"><i class="fas fa-save"></i> Save</button>
+				<button type="button" class="btn btn-secondary cancel">Discard Changes</button>
+			</form>
+		</div>
+	</div>
+	
+	<div id="user-message" class="alert alert-warning alert-dismissible" role="alert">
+		<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+		<span class="message"></span>
+	</div>
+	<div style="display:none">
+		<!-- ouc:ob --><!-- /ouc:ob -->
+	</div>
+
+	<script id="preset-row-template" type="html/template">
+		<div class="form-group row">
+			<div class="col">
+				<div class="input-group">
+					<input type="text" class="form-control preset-width" placeholder="Width" autocomplete="off" value="{{width}}" />
+					<input type="text" class="form-control preset-suffix" placeholder="Suffix" autocomplete="off" value="{{suffix}}" />
+					<div class="input-group-append">
+						<button class="btn btn-outline-secondary clear-row" type="button" tabindex="-1"><i class="fas fa-times"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</script>
+	<script id="list-preset-template" type="html/template">
+		<li class="list-group-item" data-preset-id="{{id}}" title="Edit Preset"><span>{{name}}</span> <span class="float-right options"><a href="#" title="Delete Preset" class="delete"><i class="fas fa-trash"></i></a></span></li>
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="lib/js/gadgetlib.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="lib/js/app.min.js"></script>
+</body>
+
+</html>

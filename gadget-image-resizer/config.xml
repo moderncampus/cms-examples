@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<config>
+    <!-- The title that appears in the gadget's title bar. -->
+    <entry key="title" label="Title">Image Resizer</entry>
+    
+    <!-- The URL of an icon image. -->
+    <entry key="icon" private="true">icon-pictures-4</entry>
+    
+    <!-- The description that appears in the gadget chooser. -->
+    <entry key="description" private="true">This gadget generates multiple, different sized images from 1 image source.</entry>
+    
+    <!-- The URL of a thumbnail image to appear in the gadget chooser. -->
+    <entry key="thumbnail" private="true">lib/img/logo.png</entry>
+    
+    <!-- Current supported types are "dashboard" and "sidebar". If you want your gadget to appear
+         in both places, enter "dashboard, sidebar". -->
+    <entry key="types" private="true">dashboard, sidebar</entry>
+    
+    <!-- This entry, if present, causes OU Campus to forward notifications of the specified 
+         type(s) to the gadget. Enter one or more notification types separated by commas. -->
+    <entry key="notifications" private="true">message</entry>
+    
+    <!-- For sidebar gadgets only. See explanation at bottom. -->
+    <!-- <entry key="sidebar_context" private="true">edit</entry> -->
+    
+    <!-- For dashboard gadgets only. Determines the width of the gadget in columns. 
+         Can be 1, 2, or 3. -->
+    <entry key="columns" private="true">1</entry>
+    
+    <!-- For sidebar gadgets only. Determines the initial height of the gadget in pixels. -->
+    <entry key="initial_height" private="true">290</entry>
+    
+    <!-- Below is a custom config entry. Custom entries are for the gadget's internal use only.
+         You can add as many custom entries as you wish. The "private" and "overwritable" flags
+         apply to custom entries too. -->
+    <entry key="version" label="Version" private="true">1.0.0</entry>
+    <entry key="image_dir" label="Image Directory" overwritable="true">/_resources/images/resized/</entry>
+<!-- 	<entry key="image_sizes" label="Image Sizes JSON (Advanced)" overwritable="false"></entry>
+	<entry key="image_sizes__help" private="true">Used to supply the default resizing presets.</entry> -->
+<!--     <entry key="image_sizes" label="Image Sizes" overwritable="true">
+      [ { "width": 1920 }, { "width": 1280, "suffix": "-desktop" }, { "width": 800, "suffix": "-tablet" }, { "width": 800, "suffix": "-tablet2" }, { "width": 600, "suffix": "-mobile" }, { "width": 480, "suffix": "-mobile2" } ]
+    </entry>
+    <entry key="overwrite_upload" label="Overwrite on Upload" overwritable="true" type="radio">{"list":[{"key":"Overwrite Images","selected":false},{"key":"Don't Overwrite Images","selected":true}]}</entry> -->
+
+  </config>
+
+
+<!-- Flags
+    
+    private      : If set to true, the property will not be exposed anywhere in the UI.
+    
+    overwritable : If set to true, the property will be exposed in the gadget's user-accessible
+                   configuration modal. If false or absent, the property will only be exposed
+                   in the gadget management screen. (If the private flag is set to true, this
+                   property is ignored.)
+-->
+
+
+<!-- Sidebar contexts
+    
+    If the sidebar_context property is specified, the sidebar gadget will only appear when the 
+    OU Campus app is "in" the specified context. Curent supported contexts are as follows:
+    
+    "page"              : True when the subject of the current view is an individual page. Examples include
+                          page preview, page edit, and page properties.
+    "page-params"       : True for Page Parameters view
+    "page-preview"      : True for Page preview view
+    "page-edit-preview" : True for Page Edit preview view
+    "edit"              : True only for WYSIWYG editing views and source editing views.
+    "justedit"          : True for JustEdit
+    "legacy-wysiwyg"    : True for Legacy WYSIWYG (not JustEdit)
+    "source-edit"       : True for Source editor
+    "asset"             : True when the subject of the current view is an individual asset.
+    "asset-edit"        : True for Asset Edit preview view
+    "asset-preview"     : True for Asset preview view
+    "file"              : True when the subject of the current view is either an individual page or an 
+                          individual asset.
+-->
