@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/single-pdf-output/xsl/html-output.xsl" title="Web" extension="html"?>
+<?pcf-stylesheet path="/single-pdf-output/xsl/pdf/pdf-output.xsl" title="PDF" extension="pdf" alternate="yes" publish="yes" ?>
+<?pcf-stylesheet path="/single-pdf-output/xsl/pdf/pdf-output.xsl" title="FO XML" extension=".fo.xml" alternate="yes" publish="no" ?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd"> 
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+
+	<!-- Best practice is to have a couple common empty nodes in case a page needs to have page-unique code. These are only editable in source and therefore admins. -->
+	<headcode></headcode> <!-- Output just before closing head tag. -->
+	<bodycode></bodycode> <!-- Output just after opening body tag. -->
+	<footcode></footcode> <!-- Output just before closing body tag. -->
+
+	<!-- General page properties. Defines user options for page layout. -->
+	<ouc:properties label="config">
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Page title that displays above the main content region.">Publishing PDF</parameter>
+	</ouc:properties>
+
+	<!-- Meta page properites. Defines the meta elements that are placed in the head of the HTML document. -->
+	<ouc:properties label="metadata">
+		<title>Publishing PDF</title>
+		<meta name="Description" content="" />
+		<meta name="Keywords" content="" />
+	</ouc:properties>
+
+	<!-- PDF Properties -->
+	<ouc:properties label="pdf-metadata">
+		<parameter section="PDF Meta Data" name="meta-title" type="text" group="Everyone" prompt="PDF Title" alt="Enter PDF title. Defaults to page title if blank.">Single PDF Example Header</parameter>
+		<parameter name="meta-author" type="text" group="Everyone" prompt="PDF Author" alt="Enter PDF author."></parameter>
+		<parameter name="meta-subject" type="text" group="Everyone" prompt="PDF Subject" alt="Enter PDF subject. Defaults to meta description if blank."></parameter>
+		<parameter name="meta-keywords" type="text" group="Everyone" prompt="PDF Keywords" alt="Enter PDF keywords."></parameter>
+		<parameter name="meta-footer" type="text" group="Everyone" prompt="PDF Footer" alt="Enter PDF footer. Defaults to page title if blank.">Single PDF Example Footer</parameter>
+
+		<parameter section="PDF Options" name="pdf-layout" type="select" group="Everyone" prompt="Number of Columns" alt="Please choose the number of columns you would like the PDF to display as.">
+			<option value="1col" selected="false">1 column</option>
+			<option value="2col" selected="true">2 columns</option>
+			<option value="3col" selected="false">3 columns</option>
+		</parameter>
+
+		<parameter name="display-button" type="checkbox" group="Everyone" prompt="Display Button" alt="Pleae determine if the Print PDF button will display on the webpage.">
+			<option value="true" selected="true">Display if checked</option>
+		</parameter>
+	</ouc:properties>
+
+	<ouc:div label="maincontent" group="Everyone" button-text="Main Content">
+		<h3>Paragraphs</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="http://google.com">Vestibulum</a> ut dolor lectus. Duis ut urna risus. Fusce finibus, nisl vel sollicitudin elementum, augue nisi pharetra purus, non efficitur libero augue vitae massa. Curabitur eget tortor sit amet odio hendrerit porttitor. Donec vel sollicitudin nulla. Aenean ac neque sed nulla fermentum cursus in vitae dui. Suspendisse potenti. Nullam mattis est in augue consectetur ornare! Aliquam vel magna quis lorem dictum volutpat non eu justo. Nam cursus gravida tortor, sit amet lacinia lacus interdum vel. Suspendisse mollis, quam vitae tristique suscipit, elit justo sagittis est, at ornare nulla ipsum ac augue? Curabitur non lobortis purus. Nunc luctus dolor ac tellus vehicula vulputate. Aliquam eu magna sapien.</p>
+		<p>Nulla velit odio, dapibus vitae lorem finibus, molestie consequat magna! Praesent vitae rutrum elit, eget pellentesque neque? Praesent cursus tortor sit amet ex pulvinar, et aliquam quam maximus. In lectus augue, eleifend sit amet dui eleifend, interdum pellentesque risus! Quisque quis tempor ipsum! In convallis malesuada nibh quis vestibulum. Morbi faucibus blandit ex in maximus. Vivamus sed tellus eget mauris pretium luctus eu at metus. Nunc et ante sed purus ullamcorper condimentum non ut lacus. Donec mollis; tortor vel venenatis ornare, quam odio feugiat ante, vulputate tincidunt arcu urna at metus. Nullam nibh sapien, suscipit sed ligula nec, venenatis mollis elit. Nulla nec dolor ut leo consequat efficitur malesuada sed nunc? Donec vitae condimentum felis. Nunc nec nisi lacus. Donec non felis a sem convallis pharetra nec ut libero. Pellentesque eget tortor pulvinar, lacinia magna eu, pretium quam.</p>
+		<p>Nulla facilisi. Pellentesque non neque sollicitudin ante auctor tempus. Vivamus suscipit, risus vitae sodales vulputate, purus sem dignissim neque, non eleifend enim purus sed justo. Integer fermentum vitae urna ut faucibus. Aenean sed augue sit amet sapien malesuada elementum. In erat massa, consectetur quis congue in; varius at orci? Morbi vitae ipsum metus. Ut ac pretium augue. Praesent cursus quam a leo pulvinar suscipit. Maecenas molestie sodales metus, et imperdiet nibh scelerisque sit amet. Vestibulum lobortis, eros eget eleifend cursus, justo lacus dignissim arcu, nec auctor velit ipsum nec nulla. Maecenas scelerisque velit sit amet augue tincidunt, vitae pharetra elit luctus. Morbi condimentum lacinia rutrum. Praesent faucibus, mauris eget tristique vulputate, diam risus euismod nulla, vitae facilisis odio dolor vel purus. Aliquam suscipit ex sed dui fringilla commodo. Etiam commodo, ex et bibendum posuere, massa ex pellentesque mauris, vitae egestas dolor felis scelerisque sapien.</p>
+		<h3>Lists</h3>
+		<h4>Unordered Lists</h4>
+		<ul>
+			<li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
+			<li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
+			<li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
+			<li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</li>
+			<li>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna.</li>
+			<li>Nulla sed leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</li>
+			<li>Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus.</li>
+			<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</li>
+			<li>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</li>
+			<li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
+			<li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
+			<li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
+			<li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</li>
+			<li>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna.</li>
+			<li>Nulla sed leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</li>
+			<li>Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus.</li>
+		</ul>
+		<h4>Ordered Lists</h4>
+		<ol>
+			<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+			<li>Aliquam tincidunt mauris eu risus.</li>
+			<li>Vestibulum auctor dapibus neque.</li>
+			<li>Nunc dignissim risus id metus.</li>
+			<li>Cras ornare tristique elit.</li>
+			<li>Vivamus vestibulum nulla nec ante.</li>
+			<li>Praesent placerat risus quis eros.</li>
+			<li>Fusce pellentesque suscipit nibh.</li>
+			<li>Integer vitae libero ac risus egestas placerat.</li>
+			<li>Vestibulum commodo felis quis tortor.</li>
+			<li>Ut aliquam sollicitudin leo.</li>
+			<li>Cras iaculis ultricies nulla.</li>
+			<li>Donec quis dui at dolor tempor interdum.</li>
+			<li>Vivamus molestie gravida turpis.</li>
+			<li>Fusce lobortis lorem at ipsum semper sagittis.</li>
+			<li>Nam convallis pellentesque nisl.</li>
+			<li>Integer malesuada commodo nulla.</li>
+		</ol>
+
+		<h3 class="ou-exclude-from-pdf">Exclude from PDF</h3>
+		<p class="ou-exclude-from-pdf">Aliquam justo arcu, placerat id felis ac, lacinia interdum metus. Morbi sed erat sollicitudin, eleifend enim ac, pellentesque ipsum. Aenean imperdiet in felis quis sodales. Etiam diam massa, commodo vitae hendrerit non, consequat in diam. In sed euismod enim. Nulla commodo eget ligula eu elementum. Sed a erat interdum, laoreet mauris et, varius justo! Vestibulum elementum sollicitudin massa sed finibus? Morbi porttitor nisi at ex luctus aliquet. Suspendisse aliquam at dui vitae elementum. Cras auctor mi purus, nec posuere justo dignissim quis! Suspendisse ullamcorper nibh at risus scelerisque, id iaculis velit tempus.</p>
+
+	</ouc:div>
+
+</document>
