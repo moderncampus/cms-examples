@@ -1,0 +1,101 @@
+table[class^=omni-]{ width: 100%; cursor: default; margin-bottom: 4rem !important; }
+
+table[class^="omni-"] img { max-width: 100%; }
+
+table[class^="omni-"], .mce-item-table, .mce-item-table td, .mce-item-table th, .mce-item-table caption {
+	border-collapse: collapse;
+    border-spacing: 0px;
+	border: 1px solid #b1b1b1;
+	box-sizing: border-box;
+}
+
+[class^=omni-] thead tr th, [class^=omni-] tbody tr th, [class^=omni-] caption, [class^=omni-] thead tr td { font-weight: 800; }
+
+[class^=omni-] thead tr th, [class^=omni-] tbody tr th, [class^=omni-] caption, [class^=omni-] thead tr td, [class^=omni-] tbody tr td{
+	color: #000;
+	font-size: 14px;
+	padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+	padding-right: 5px;
+	vertical-align: top;
+}
+
+[class^="omni-"] thead tr th, [class^="omni-"] tbody tr th ,[class^="omni-"] caption {
+    background: none repeat scroll 0 0 #f0f0f0;
+	color: #333;
+	font-weight: 600;
+    font-size: 14px;
+}
+
+[class^=omni-] caption {
+	font-size: 18px;
+	text-align: center;
+	background-image: linear-gradient(to bottom,#f9f9f9,#d3d3d3);
+	margin: 0px;
+    border-bottom: 0;
+}
+
+/********************************
+ * START Table Input Hint Styling
+ ********************************/
+
+/* Generic table "tool-tip/alert" info styling */
+table[class^="omni-"] th:before,
+table[class^="omni-"] td:before,
+table[class^="omni-"] caption:before,
+table[class^="omni-"]:before {
+	display: block;
+	padding: 5px 15px;
+	margin-bottom: 10px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: #31708f;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+}
+
+/********************************
+ * END Table Input Hint Styling
+ ********************************/
+
+/* example of helper text */
+table.omni-table-class > tbody > tr > td:nth-child(1):before { content: 'Add your content and style via WYSIWYG editor toolbar'; }
+
+/* omni-accordion: */
+table.omni-accordion > colgroup > col:nth-child(1) { width: 20% !important; }
+table.omni-accordion > colgroup > col:nth-child(2) { width: 80% !important; }
+table.omni-accordion > tbody > tr > td:nth-child(1):before { content: 'Heading for the content'; }
+table.omni-accordion > tbody > tr > td:nth-child(2):before { content: 'Add your content and style via WYSIWYG editor toolbar'; }
+
+/* omni-tabs */
+table.omni-tabs > colgroup > col:nth-child(1) { width: 20% !important; }
+table.omni-tabs > colgroup > col:nth-child(2) { width: 80% !important; }
+table.omni-tabs > tbody > tr > td:nth-child(1):before { content: 'Tab heading for the content'; }
+table.omni-tabs > tbody > tr > td:nth-child(2):before { content: 'Add your content and style via WYSIWYG editor toolbar'; }
+
+/* two columns */
+table.omni-two-columns > colgroup > col { width: 50% !important; }
+table.omni-two-columns > tbody > tr:nth-child(1) > td:before { content: 'Add your content and style via WYSIWYG editor toolbar' ; }
+table.omni-two-columns > tbody > tr:nth-child(1) > td:nth-child(n+3):before, 
+table.omni-two-columns > tbody > tr:nth-child(n+2) > td:before { content: 'This content will NOT be added to the columns' !important; }
+
+/* three columns */
+table.omni-three-columns > colgroup > col { width: 33% !important; }
+table.omni-three-columns > tbody > tr:nth-child(1) > td:before { content: 'Add your content and style via WYSIWYG editor toolbar'; }
+table.omni-three-columns > tbody > tr:nth-child(1) > td:nth-child(n+4):before, 
+table.omni-three-columns > tbody > tr:nth-child(n+2) > td:before { content: 'This content will NOT be added to the columns' !important; }
+
+/* Image with Caption */
+table.omni-image-caption > colgroup > col:nth-child(1) { width: 10% !important; }
+table.omni-image-caption > colgroup > col:nth-child(2) { width: 90% !important; }
+table.omni-image-caption > tbody > tr:nth-child(1) > td:before { content: 'Please place one image in this table cell'; }
+table.omni-image-caption > tbody > tr:nth-child(2) > td:before { content: 'Add your caption and style via WYSIWYG editor toolbar'; }
+table.omni-image-caption > tbody > tr:nth-child(n+3) > td:before { content: 'This content will NOT be added to the image with caption'; }
+
+/* Blockquote With Citation */
+table.omni-blockquote > colgroup > col:nth-child(1) { width: 10% !important; }
+table.omni-blockquote > colgroup > col:nth-child(2) { width: 90% !important; }
+table.omni-blockquote > tbody > tr:nth-child(1) > td:before { content: 'Please enter the quote'; }
+table.omni-blockquote > tbody > tr:nth-child(2) > td:before { content: 'Who said this quote?'; }
+table.omni-blockquote > tbody > tr:nth-child(n+3) > td:before { content: 'This content will NOT be added to the blockquote'; }

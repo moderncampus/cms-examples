@@ -1,0 +1,15 @@
+@import 'table-transformations.css';
+
+.ou-justedit-region {
+	background-color: #FFFFFF !important;
+	color: #000000 !important;
+	padding: 15px;
+	width: 98%;
+}
+/* Fix issue with bootstrap buttons in WYSIWYG */
+.ou-justedit-region .btn{
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;	
+}
