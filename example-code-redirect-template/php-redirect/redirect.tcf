@@ -1,0 +1,29 @@
+<title>New Redirect</title>
+
+<variable-list>
+	<variable 
+		name="pcf-filename" 
+		prompt="Filename" 
+		alt="Enter a filename using only lowercase letters or dashes. This is where the page will redirect from."
+		>untitled</variable>
+	
+	<variable 
+	 name="target" 
+	 prompt="Redirect URL" 
+	 type="filechooser" 
+	 path="/" 
+	 alt="Select the location you want to redirect to. NOTE: be sure to select file from prodution server."
+	></variable>
+</variable-list>
+
+<template-list>
+	<template 
+	 prompt-prefix="Redirect File" 
+	 publish="yes"
+	 redirect="yes" 
+	 display-group="no"
+	 group="everyone"
+	 display-filename="no" 
+	 filename="{pcf-filename}"
+	 extension="pcf">redirect.tmpl</template>
+</template-list>

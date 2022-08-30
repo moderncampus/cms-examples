@@ -1,0 +1,29 @@
+<title>New Redirect</title>
+
+<variable-list>
+	<variable 
+		name="target" 
+		prompt="Original File" 
+		type="filechooser" 
+		path="/" 
+		alt="Select the file on the production server to point the short url to."></variable>
+	<variable 
+		name="dirname" 
+		prompt="Short Name" 
+		alt="A single word to represent your shortened url. (example. http://www.yoursite.com/rd/shortname/)."></variable>
+</variable-list>
+
+<template-list>
+	<template 
+		prompt-prefix="Existing Redirect File" 
+		publish="yes" 
+		redirect="no" 
+		display-group="no" 
+		group="everyone" 
+		force-destination="yes" 
+		destination="/rd/{dirname}" 
+		display-filename="no" 
+		filename="index" 
+		extension="html" 
+		title="Web">redirect.tmpl</template>
+</template-list>
