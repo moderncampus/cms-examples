@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/tag-management/tag-testing.xsl" extension="html"?>
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<!--
+TAG TESTING DOCUMENT
+
+Place this document on your site's staging server to test out the Tag Management API calls you can make. This file does not need to ever be published.
+Use the options available in Page Properties to play around with different tags, collections and pages.
+Have fun!
+
+Contributors: Brandon Scheirman and Robert Kiffe
+Last updated: 7/26/16
+-->
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+	<ouc:properties>
+		<parameter section="GetTags and GetCombinedTags" name="staging-path" group="Everyone" type="filechooser" source="staging" dependency="s-tag" prompt="File" alt="Pick a file to see tags that have been applied to it. This data is used by two API calls."></parameter>
+		<parameter section="GetFixedTags" name="directory" group="Everyone" type="filechooser" source="staging" dependency="no" prompt="File" alt="Choose a file inside a directory for which you would like to see its fixed tags."></parameter>
+		<parameter section="GetParents" name="tag-parents" group="Everyone" type="text" prompt="Tag Name" alt="Write in a tag to see what collections it belongs to."></parameter>
+		<parameter section="GetChildren" name="collection-children" group="Everyone" type="text" prompt="Collection Name" alt="Write in a collection to see what tags comprise it."></parameter>
+		<parameter section="GetFilesWithAnyTags" name="tag-list-any" group="Everyone" type="text" prompt="Tag List (Comma-separated)" alt="Type tags without spaces to find files that match one or more listed tag."></parameter>
+		<parameter section="GetFilesWithAllTags" name="tag-list-all" group="Everyone" type="text" prompt="Tag List (Comma-separated)" alt="Type tags without spaces to find files that match all listed tags."></parameter>	
+	</ouc:properties>
+</document>
