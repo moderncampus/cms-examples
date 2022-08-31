@@ -16,7 +16,7 @@ Applicable to individual pdf output.
 				xmlns:fo="http://www.w3.org/1999/XSL/Format"
 				exclude-result-prefixes="xsl xs ou fn ouc">
 
-	<!-- ou campus variables and other variables -->
+	<!-- Omni CMS variables and other variables -->
 	<xsl:import href="../_shared/variables.xsl"/>
 
 	<!-- pdf functions (relative link convert...) -->
@@ -74,7 +74,7 @@ Applicable to individual pdf output.
 					</rdf:Description>
 					<rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/">
 						<!-- XMP Basic properties go here -->
-						<xmp:CreatorTool>OU Campus</xmp:CreatorTool><!-- Tool used to make the PDF -->
+						<xmp:CreatorTool>Omni CMS</xmp:CreatorTool><!-- Tool used to make the PDF -->
 					</rdf:Description>
 					<rdf:Description rdf:about="" xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
 						<!-- Adobe PDF Schema properties go here -->

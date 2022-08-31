@@ -48,7 +48,7 @@
 	
 	<!-- 	Editable region. An ouc:div defines an editable region so a user can edit content within the WYSIWYG editor. Every ouc:div must have a unique label. 
 			The ouc:editor defines the CSS styling in the WYSIWYG editor for this editable region.
-			More information here: https://support.omniupdate.com/technical-reference/developer/page-tagging.html -->
+			More information here: https://support.moderncampus.com/technical-reference/templates/page-tagging/ -->
 	<ouc:div label="maincontent" group="Everyone" button-text="Main Content">
 		<ouc:editor csspath="/_resources/ou/editor/content.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="maincontent" width="1020" />
 			<p><img style="margin: 15px; float: right;" src="http://placehold.it/81x81" alt="Lorem ipsum" />Cat ipsum dolor sit amet, lick arm hair but sleep in the bathroom sink. Sit by the fire need to chase tail. Stand in front of the computer screen spread kitty litter all over house, chew iPad power cord eat and than sleep on your face. Cat snacks missing until dinner time i like big cats and i can not lie and favor packaging over toy, yet attack feet chase dog then run away, missing until dinner time. Hiss at vacuum cleaner pooping rainbow while flying in a toasted bread costume in space, for spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce or meow all night having their mate disturbing sleeping humans stare at ceiling cat snacks chase dog then run away. Purr while eating. </p>

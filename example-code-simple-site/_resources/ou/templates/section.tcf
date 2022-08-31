@@ -3,7 +3,7 @@
 	<title>New Section</title>
 	<variable-list>
 		<!-- dirname and friendly name -->
-		<variable section="Folder Information" name="dirname" prompt="Directory Name" alt="Enter the directory name that will be visible in OU Campus and in the URL. No special characters or spaces."></variable>
+		<variable section="Folder Information" name="dirname" prompt="Directory Name" alt="Enter the directory name that will be visible in Omni CMS and in the URL. No special characters or spaces."></variable>
 		<variable name="friendly-name" prompt="Friendly Name" alt="Enter a friendly name for the section breadcrumb. This will be displayed in the web page to site visitors."></variable>
 		<!-- general page setup -->
 		<include>_commonvars.inc</include>

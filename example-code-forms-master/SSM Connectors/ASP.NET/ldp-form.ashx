@@ -26,7 +26,7 @@ public class LDPForm : IHttpHandler
         if(formValidated){
             string myPath = context.Server.MapPath(".");
             context.Response.ContentType = "text/plain";
-            JsonObject ouResponse = OmniUpdate.LDP.Form.Send(null, context.Request,myPath);
+            JsonObject ouResponse = Modern Campus.LDP.Form.Send(null, context.Request,myPath);
             context.Response.Write(ouResponse);
         }else{
             context.Response.Write("{\"active\":false,\"message\":\"Form did not pass CAPTCHA validation!\",\"data\":\"\"}");
@@ -69,7 +69,7 @@ public class LDPForm : IHttpHandler
     }
 
 }
-namespace OmniUpdate
+namespace Modern Campus
 {
     namespace LDP
     {
@@ -103,7 +103,7 @@ namespace OmniUpdate
                 JsonObject ouResponse2;
                 string site_uuid = "";
 
-                ouResponse2 = OmniUpdate.LDP.Form.GetConfig(myPath);
+                ouResponse2 = Modern Campus.LDP.Form.GetConfig(myPath);
                 dynamic dynJson = ouResponse2;
                 foreach (var item in dynJson["data"])
                 { foreach (var item2 in item["sites"])

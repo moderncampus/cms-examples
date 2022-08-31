@@ -9,7 +9,7 @@
     xmlns:ouc="http://omniupdate.com/XSL/Variables"
     exclude-result-prefixes="ou xsl xs fn ouc">
 
-	<!-- OU CAMPUS SYSTEM PARAMETERS - don't edit -->
+	<!-- Omni CMS SYSTEM PARAMETERS - don't edit -->
 	<xsl:param name="ou:action"/>
 	<xsl:param name="ou:uuid"/>
 	<xsl:param name="ou:path"/>

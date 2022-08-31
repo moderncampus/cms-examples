@@ -49,7 +49,7 @@
 	
 	<!-- 	Editable region. An ouc:div defines an editable region so a user can edit content within the WYSIWYG editor. Every ouc:div must have a unique label. 
 			The ouc:editor defines the CSS styling in the WYSIWYG editor for this editable region.
-			More information here: https://support.omniupdate.com/technical-reference/developer/page-tagging.html -->
+			More information here: https://support.moderncampus.com/technical-reference/templates/page-tagging/ -->
 	<ouc:div label="maincontent" group="Everyone" button-text="Main Content">
 		<ouc:editor csspath="/_resources/ou/editor/content.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="maincontent" width="1020" />
 		<p><img style="margin: 15px; float: right;" src="http://placehold.it/81x81" alt="Lorem ipsum" />Baseball ipsum dolor sit amet double switch mendoza line pinch hit relay. Reliever loss manager reds shutout, dead ball era pull. Off-speed relief pitcher double switch umpire triple-A league series. Peanuts reds cubs chin music butcher boy sacrifice bunt on-base percentage. Chin music field lineup baltimore chop skipper triple play shift passed ball. Sweep bag golden sombrero pull second base peanuts lineup can of corn.</p>

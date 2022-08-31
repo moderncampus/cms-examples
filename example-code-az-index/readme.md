@@ -1,8 +1,8 @@
-***The included source code, service and information is provided as is, and OmniUpdate makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of OU Campus.***
+***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Omni CMS.***
 
 # A to Z Index
 
-This package contains the code needed to take an OU Campus sitemap and output a list of each page in the sitemap at the time the page is published. The default styling for the output uses Bootstrap, which can be adjusted with CSS/XSL for different output structures and styles. 
+This package contains the code needed to take an Omni CMS sitemap and output a list of each page in the sitemap at the time the page is published. The default styling for the output uses Bootstrap, which can be adjusted with CSS/XSL for different output structures and styles. 
 
 ## Using the Starter Code
 
@@ -24,7 +24,7 @@ Once it is implemented, the managing an A-Z index is a simple process. To modify
 
 4. Publish the A-Z index page.
 
-More information about OU Campus' sitemap can be found on the [OU Campus Support Site](https://support.omniupdate.com/learn-ou-campus/administration/setup/sites/index.html#publish).
+More information about Omni CMS' sitemap can be found on the [Omni CMS Support Site](https://support.moderncampus.com/learn-omni-cms/administration/setup/sites/index.html#publish).
 
 ## Additional Information
 

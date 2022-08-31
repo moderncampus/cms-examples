@@ -1,4 +1,4 @@
-***The included source code, service and information is provided as is, and OmniUpdate makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of OU Campus.***
+***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Omni CMS.***
 
 # Blog Notes
 
@@ -6,7 +6,7 @@
 This implementation utilizes the Foundation framework, so each script is tailored to output a specific HTML, keep this in mind when implementing. Happy Blogging.
 
 ## Outline
-A blog consists of three main parts, listing pages/assets, post files, and scripts. The blog listing page is a PCF which OU Campus outputs as an HTML page with function calls to external scripts, based on page parameters. See [Blog Listing Template](#listing) below for specific page params.  OU Campus holds each post as a PCF, XSL outputs two types of files, content (HTML) and data (XML). This data is taken upon page creation (post.tcf) and manually input via page properties and multi-edit.
+A blog consists of three main parts, listing pages/assets, post files, and scripts. The blog listing page is a PCF which Omni CMS outputs as an HTML page with function calls to external scripts, based on page parameters. See [Blog Listing Template](#listing) below for specific page params.  Omni CMS holds each post as a PCF, XSL outputs two types of files, content (HTML) and data (XML). This data is taken upon page creation (post.tcf) and manually input via page properties and multi-edit.
 Scripts are XSL and PHP (ASP to come.. maybe). XSL handles the XML output and to a lesser extent the HTML - it's mostly just boring content. Blog Assets are handled with a template-match, see [Assets](#assets) for more detail. PHP does the grunt work by crawling a given directory structure for XML post files, displaying content, and for pagination.
 
 ## Structure
@@ -55,7 +55,7 @@ This is only a suggested structure, change it to suit your implementation.
 		* PCF Multi-Edit (not passed by TCF): display toggle and image.
 
 * Tags
-	* Tags are managed via OU Campus tag management and thus added via Page Properties. 
+	* Tags are managed via Omni CMS tag management and thus added via Page Properties. 
 		* Add tags to a listing page to filter blog posts by specific tags.
 
 ### Post Comments

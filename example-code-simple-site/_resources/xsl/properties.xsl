@@ -20,7 +20,7 @@
 				<div class="container">
 					<h1>Section Properties</h1>
 					<p>To edit the following section propeties, please check out this page and go to the Page Properties screen.<br />
-					Changes will take effect immediately OU Campus - this file does not need to be published.<br /> 
+					Changes will take effect immediately Omni CMS - this file does not need to be published.<br /> 
 					However, the PCF files in this folder must be republished for changes to appear on <xsl:value-of select="concat($domain,$dirname)"/>.</p>
 					<h2>Properties for the folder "<xsl:value-of select="if ($ou:dirname!='/') then(normalize-space(ou:current_folder($ou:dirname))) else '/'"/>"</h2>
 					<dl>	

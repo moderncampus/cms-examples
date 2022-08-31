@@ -3,7 +3,7 @@
 	<title>New Page</title>
 	
 	<variable-list>
-		<variable section="Folder Information" name="dirname" prompt="Directory Name" alt="Enter the directory name that will be visible in OU Campus and in the URL. No special characters or spaces."></variable>
+		<variable section="Folder Information" name="dirname" prompt="Directory Name" alt="Enter the directory name that will be visible in Omni CMS and in the URL. No special characters or spaces."></variable>
 		<!-- general page setup -->
 		<variable section="Index Page Setup" name="title" prompt="Listing Title" alt="Enter the page title. This will also be displayed by search engines as well as the web browser window."></variable>
 		<variable name="description" section="Listing Page Post Information" type="text" rows="8" prompt="Post Description" alt="Description of the post that will show up on the listing page."></variable>

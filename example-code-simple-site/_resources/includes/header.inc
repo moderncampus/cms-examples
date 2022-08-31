@@ -1,7 +1,7 @@
 <!-- ouc:editor wysiwyg="no" -->
 <div class="row clearfix">
 	<div class="col-sm-12">
-		<h1>OmniUpdate Simple Site</h1>
+		<h1>Modern Campus Simple Site</h1>
 	</div>
 </div>	
 <nav class="navbar navbar-default" role="navigation">

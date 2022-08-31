@@ -1,7 +1,7 @@
 {
   "name": "gadget-starter",
   "version": "1.0.0",
-  "description": "OU Campus Gadget Starter Kit",
+  "description": "Omni CMS Gadget Starter Kit",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/omniupdate/gadget-starter.git"
   },
-  "author": "OmniUpdate",
+  "author": "Modern Campus",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/omniupdate/gadget-starter/issues"

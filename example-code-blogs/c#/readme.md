@@ -1,9 +1,9 @@
-***The included source code, service and information is provided as is, and OmniUpdate makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of OU Campus.***
+***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Omni CMS.***
 
 #Blog Notes
 
 ##Outline
-A blog consists of three main parts, listing pages/assets, post files, and scripts. The blog listing page is a PCF which OU Campus outputs as an ASPX page with function calls to internal scripts, based on page parameters. See [Blog Listing Template](#listing) below for specific page params.  OU Campus holds each post as a PCF, XSL outputs two types of files, content (HTML) and data (XML). This data is taken upon page creation (ou-blog-post.tcf) and manually input via page properties and multi-edit.
+A blog consists of three main parts, listing pages/assets, post files, and scripts. The blog listing page is a PCF which Omni CMS outputs as an ASPX page with function calls to internal scripts, based on page parameters. See [Blog Listing Template](#listing) below for specific page params.  Omni CMS holds each post as a PCF, XSL outputs two types of files, content (HTML) and data (XML). This data is taken upon page creation (ou-blog-post.tcf) and manually input via page properties and multi-edit.
 Scripts are XSL and C#. XSL handles the XML output (.blog extension) and to a lesser extent the HTML - it's mostly just boring content. Blog Assets are handled with a template-match, see [Assets](#assets) for more detail. C# is used for server side query string based pagination, splitting up the full list. C# does the grunt work by crawling a given directory structure for XML post files, and displaying content with a bunch of different functions, more below.
 
 

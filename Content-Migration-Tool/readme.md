@@ -1,8 +1,8 @@
-***The included source code, service and information is provided as is, and OmniUpdate makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of OU Campus.***
+***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Omni CMS.***
 
 # Content Migration Tool
 
-The OmniUpdate Content Migration Tool utilizes Ruby scripts to allow for bulk processing of source files to produce OU Campus PCF files that are ready to use. 
+The Modern Campus Content Migration Tool utilizes Ruby scripts to allow for bulk processing of source files to produce Omni CMS PCF files that are ready to use. 
 
 ## Required Gems
 	- Nokogiri: `gem install nokogiri` or `sudo gem install nokogiri`
@@ -23,9 +23,9 @@ Choose the appropriate package depending on the type of migration you expect to 
 3. `migrate_from_csv.rb`
 	- Used to perform a migration from a set of source files, rearchitecting the files during migration using a migration map (CSV format). 
 
-Once you have chosen the appropriate skeleton package, you will need to adjust the configuration (`config.rb`) with the proper variables, set your templates (ERB files within `/templates`) to match the OU Campus PCF output required for your implementation, and target your content using XPath (within the appropriate migrate method in `methods.rb`). 
+Once you have chosen the appropriate skeleton package, you will need to adjust the configuration (`config.rb`) with the proper variables, set your templates (ERB files within `/templates`) to match the Omni CMS PCF output required for your implementation, and target your content using XPath (within the appropriate migrate method in `methods.rb`). 
 
-Once the above has been completed and the script has been run, it will output a file package that can then be zipped and uploaded into OU Campus for immediate use. 
+Once the above has been completed and the script has been run, it will output a file package that can then be zipped and uploaded into Omni CMS for immediate use. 
 
 ## Additional Customization
 

@@ -1,4 +1,4 @@
-***The included source code, service and information is provided as is, and OmniUpdate makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of OU Campus.***
+***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Omni CMS.***
 
 # LDP Galleries
 
@@ -118,7 +118,7 @@ In common.xsl, you will want to import the gallery.xsl and call the gallery head
 
 ## Uploading the Resource Files
 
-Simply upload the `active.zip` file via the Import Zip File function in OU Campus. All css, js, and xsl files will be uploaded into the standard locations.
+Simply upload the `active.zip` file via the Import Zip File function in Omni CMS. All css, js, and xsl files will be uploaded into the standard locations.
 
 ## Troubleshooting
 

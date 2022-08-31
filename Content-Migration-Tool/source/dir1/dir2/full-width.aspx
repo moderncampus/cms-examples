@@ -293,5 +293,5 @@
       </footer>
       <div id="utilnavMobile" style="display: none;">
          <!--#include virtual="/_resources/includes/utility_nav_mobile.inc" -->
-      </div><script src="/_resources/js/main.js"></script><a href="http://www.omniupdate.com/oucampus/de.jsp?user=secc&amp;site=www&amp;path=%2Fzz-test%2Ffull-width.pcf" target="_top"><img src="http://www.omniupdate.com/servlet/OX/oucampus/ob.gif?user=secc&amp;site=www&amp;date=1386262915455" alt="OmniUpdate" border="0" /></a></body>
+      </div><script src="/_resources/js/main.js"></script><a href="http://www.omniupdate.com/oucampus/de.jsp?user=secc&amp;site=www&amp;path=%2Fzz-test%2Ffull-width.pcf" target="_top"><img src="http://www.omniupdate.com/servlet/OX/oucampus/ob.gif?user=secc&amp;site=www&amp;date=1386262915455" alt="Modern Campus" border="0" /></a></body>
 </html>

@@ -61,7 +61,7 @@ Template and Sequence definitions.
 					<rdf:Description rdf:about=""
 						xmlns:xmp="http://ns.adobe.com/xap/1.0/">
 						<!-- XMP Basic properties go here -->
-						<xmp:CreatorTool>OU Campus</xmp:CreatorTool><!-- Tool used to make the PDF -->
+						<xmp:CreatorTool>Omni CMS</xmp:CreatorTool><!-- Tool used to make the PDF -->
 					</rdf:Description>
 					<rdf:Description rdf:about=""
 						xmlns:pdf="http://ns.adobe.com/pdf/1.3/">

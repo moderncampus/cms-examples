@@ -1,16 +1,16 @@
 # gadget-starter
 
-A skeleton for creating Gadgets for the [OU Campus™ web content management system](http://www.omniupdate.com).
+A skeleton for creating Gadgets for the [Omni CMS™ web content management system](http://www.omniupdate.com).
 
 ## Creating and Installing Gadgets
 
-Refer to the [OmniUpdate Support documentation](https://support.omniupdate.com/learn-ou-campus/administration/setup/gadgets.html#addingcustomgadgets) for instructions on how to create and install custom Gadgets.
+Refer to the [Modern Campus Support documentation](https://support.moderncampus.com/learn-omni-cms/administration/setup/gadgets.html#addingcustomgadgets) for instructions on how to create and install custom Gadgets.
 
 ## Resources
 
-Check out the [OU Campus LMS](https://lms.omniupdate.com) for API documentation and an activity guide on how to create Gadgets.
+Check out the [Omni CMS LMS](https://lms.omniupdate.com) for API documentation and an activity guide on how to create Gadgets.
 
-Want to discuss your Gadget idea, get some help with your code, or share your new Gadget with other OU Campus users? Head over to the [Gadgets forum](https://ocn.omniupdate.com/forums/19/gadgets) in the OmniUpdate Community Network to discuss all things Gadget related.
+Want to discuss your Gadget idea, get some help with your code, or share your new Gadget with other Omni CMS users? Head over to the [Gadgets forum](https://ocn.omniupdate.com/forums/19/gadgets) in the Modern Campus Community Network to discuss all things Gadget related.
 
 # Table of Contents
 - Configuring the Config.xml
@@ -28,7 +28,7 @@ Want to discuss your Gadget idea, get some help with your code, or share your ne
 
 
 ## Configuring the Config.xml
-The configuration file named config.xml, must be in the root directory of the gadget. The config.xml file contains key/value pairs for various attributes that describe the gadget to OU Campus and, optionally, create persistent variables for the gadget's own use. This file contains a root node named ``<config>`` whose children are ``<entry>`` nodes. Entry nodes can contain several attributes such as ``key``,``type``, ``private``, ``overwritable``, and ``label``.
+The configuration file named config.xml, must be in the root directory of the gadget. The config.xml file contains key/value pairs for various attributes that describe the gadget to Omni CMS and, optionally, create persistent variables for the gadget's own use. This file contains a root node named ``<config>`` whose children are ``<entry>`` nodes. Entry nodes can contain several attributes such as ``key``,``type``, ``private``, ``overwritable``, and ``label``.
 
 ### Keys
 >#### **``title``**
@@ -109,7 +109,7 @@ The configuration file named config.xml, must be in the root directory of the ga
 
 >#### **``notifications``**
 >
->This entry, if present, causes OU Campus to forward notifications of the specified type(s) to the gadget, which allows you to create a Javascript event listener to listen for these events. Enter one or more notification types separated by commas. Refer to the **Gadget Events** section below to see the system defined gadget events that are natively accessible without this entry.
+>This entry, if present, causes Omni CMS to forward notifications of the specified type(s) to the gadget, which allows you to create a Javascript event listener to listen for these events. Enter one or more notification types separated by commas. Refer to the **Gadget Events** section below to see the system defined gadget events that are natively accessible without this entry.
 >
 >
 ```xml
@@ -275,13 +275,13 @@ The events listed below are system events that the gadget library automatically 
 >| ------------- | ----------- |
 >| expand      | Triggered when the gadget is opened|
 >| collapse     | Triggered when the gadget is closed  |
->| configuration     | Triggered when the gadget configuration has been changed in OU Campus.  |
+>| configuration     | Triggered when the gadget configuration has been changed in Omni CMS.  |
 >| view_changed     | Triggered when navigating to different views. |
 
 
 ## Metadata API
 
-The Metadata API library, which comes packaged in the gadgetlib.js, provides a CRUD interface for gadgets to store their own persistant data, as well has share data between gadgets. Data is stored and accessed via a custom Mime Type naming convention, and relationships between specific OU Campus data models (pages, assets, sites, and users) can be created.
+The Metadata API library, which comes packaged in the gadgetlib.js, provides a CRUD interface for gadgets to store their own persistant data, as well has share data between gadgets. Data is stored and accessed via a custom Mime Type naming convention, and relationships between specific Omni CMS data models (pages, assets, sites, and users) can be created.
 
 ### **Create**
 **Endpoint** : ``/metadata/new``  
@@ -388,7 +388,7 @@ The Metadata API library, which comes packaged in the gadgetlib.js, provides a C
     created  : "2015-12-15T19:20:03Z",
     modifed  : "2015-12-15T19:30:01Z", //last save / update date or null
     groups   : {},
-    //...Additonal details depending on if the metadata has been linked to an OU Campus data model.
+    //...Additonal details depending on if the metadata has been linked to an Omni CMS data model.
   }
  ```
  
@@ -451,7 +451,7 @@ The Metadata API library, which comes packaged in the gadgetlib.js, provides a C
  
 ### **Link** and **Un-link**
 
-Link creates a relationship between a metadatum and an OU Campus data model (page, asset, directory, or site). Un-link, as you may have guessed removes this relationship. Link should be always be called after the ID is returned from a /new call, or else the metadatum will be "orphaned", and only visible via mime type lookups.
+Link creates a relationship between a metadatum and an Omni CMS data model (page, asset, directory, or site). Un-link, as you may have guessed removes this relationship. Link should be always be called after the ID is returned from a /new call, or else the metadatum will be "orphaned", and only visible via mime type lookups.
 
 **Endpoint** : ``/metadata/assetlink`` 
 **Endpoint** : ``/metadata/pagelink``  
@@ -471,7 +471,7 @@ Link creates a relationship between a metadatum and an OU Campus data model (pag
                       - ``site`` if you are linking a metadta to a site.
 - **mime_type** - the unique identifier, think of this as a database name.
 - **id** - The id of the metadata content you wish to delete. Generally recieved when creating or listing metadata for a given mime type or after creating a new metadata.
-- **item** - This specifies the path or id of the OU Campus data model you would like the metadata to be 'attached' to. Based on the ``link_type`` used the values are the following:
+- **item** - This specifies the path or id of the Omni CMS data model you would like the metadata to be 'attached' to. Based on the ``link_type`` used the values are the following:
                     - If the ``page`` link_type is used, provide a page path.
                     - If the ``asset`` link_type is used provide an asset id.
                     - If the ``directory`` link_type is used provide a directory path.

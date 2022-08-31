@@ -1,4 +1,4 @@
-***The included source code, service, and the information is provided as is, and OmniUpdate makes no promises or guarantees about its use or misuse. The source code provided is recommended for all users and may not be compatible with all implementations of OU Campus.***
+***The included source code, service, and the information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for all users and may not be compatible with all implementations of Omni CMS.***
 
 # Outputting PCF as JSON with XSL
 
@@ -7,7 +7,7 @@ This repository provides an XSL file containing a list of catch-all template mat
 ## Sample PCF
 
 1. Zip up the `xsl` folder and `sample.pcf` file.
-2. Import into OU Campus root. *It is recommended that you do this in an empty sandbox site*
+2. Import into Omni CMS root. *It is recommended that you do this in an empty sandbox site*
 3. View the `sample.pcf` in Preview
 4. Toggle the output dropdown option to JSON to view the JSON view.
 5. Publish the page to see the JSON output of the PCF document.

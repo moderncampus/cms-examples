@@ -22,8 +22,8 @@ Structured data for a Blog Posting should contain the following:
 
 	Type - hardcoded in XSL
 	Headline - from page parameter heading
-	datePublished - date created in OU Campus
-	dateModified - date published in OU Campus
+	datePublished - date created in Omni CMS
+	dateModified - date published in Omni CMS
 	image - first one in main content or hardcoded in XSL (Absolute URL w/ height and width to scale appropriately)
 	author - page parameter or user First & Last name
 	publisher - entity or university
@@ -32,7 +32,7 @@ Structured data for a Blog Posting should contain the following:
 ****additional values and options can be included. See https://schema.org/BlogPosting for more information
 Use Google's Structured Data Validation tool https://search.google.com/structured-data/testing-tool# to validate additional items 
 
-Contributors: OmniUpdate, Inc. Web Developers
+Contributors: Modern Campus, Inc. Web Developers
 Last Updated: 1/21/2019
 -->
 <xsl:stylesheet version="3.0" 

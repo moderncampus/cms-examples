@@ -1,6 +1,6 @@
 /*
     gadgetlib.js v1.0.7.1
-    Copyright 2015 OmniUpdate, Inc.
+    Copyright 2015 Modern Campus, Inc.
     http://www.omniupdate.com/
 
     Changes in 1.0.7.1:
@@ -17,15 +17,15 @@
     
     Changes in 1.0.5.1:
       - No code changes. Edited change log to reflect that changes to API token access will
-        occur in OU Campus v10.3, not v10.2.2.
+        occur in Omni CMS v10.3, not v10.2.2.
     
     Changes in 1.0.5:
       - All gadget methods are bound to the gadget to better support use as callbacks.
     
     Changes in 1.0.4:
-      - Starting with OU Campus v10.3, the API access token and certain environment details will
+      - Starting with Omni CMS v10.3, the API access token and certain environment details will
         no longer be embedded in the URLs of custom gadgets. Instead, gadgets must request this
-        information from the OU Campus app. This version of gadgetlib does this automatically,
+        information from the Omni CMS app. This version of gadgetlib does this automatically,
         but since the process is asynchronous, gadget scripts must wait for the token to become
         available before they can use it.
         
@@ -36,7 +36,7 @@
         function as an argument to the `.then()` method of the return object, as in
         `gadget.ready().then(myFunc)`.
         
-        The `gadget.ready()` method already works with OU Campus v10.2.1.1. Although the new way
+        The `gadget.ready()` method already works with Omni CMS v10.2.1.1. Although the new way
         of obtaining the API token will not be in place until 10.3, you should adapt your
         gadgets to the new method now in preparation for the change.
     
@@ -55,15 +55,15 @@
     // private function 
     function getEnvironment() {
         /*
-            This private function gets certain information by making a request to OU Campus,
-            including key information you'll need to make an OU Campus API call. These data then
+            This private function gets certain information by making a request to Omni CMS,
+            including key information you'll need to make an Omni CMS API call. These data then
             become properties of the gadget object. The properties are as follows:
             
             Name        Example Value               Description
             ----------- --------------------------- ---------------------------------------------------
-            apihost     http://a.cms.omniupdate.com The HTTP root address of the OU Campus
+            apihost     http://a.cms.omniupdate.com The HTTP root address of the Omni CMS
                                                     application server, which is also the API
-                                                    server. All OU Campus  API endpoints begin
+                                                    server. All Omni CMS  API endpoints begin
                                                     with this value.
             token       A3xthrVCELk8XIaOEQKrIF      The authorization token provided to your gadget
                                                     for the current login session. Must be
@@ -72,19 +72,19 @@
             gid         ae206856-114c-4124-b0f1     A generated ID that uniquely identifies your
                                                     gadget. This is used internally by the `fetch`
                                                     and `save` methods.
-            place       sidebar                     Lets you know where in the OU Campus user
+            place       sidebar                     Lets you know where in the Omni CMS user
                                                     interface  the current instance of your gadget
                                                     is. This can be either 'dashboard' or
                                                     'sidebar'.
-            skin        testdrives                  The name of the current OU Campus skin.
-            account     Gallena_University          The name of the OU Campus account to which the
+            skin        testdrives                  The name of the current Omni CMS skin.
+            account     Gallena_University          The name of the Omni CMS account to which the
                                                     user is logged in.
             site        School_of_Medicine          The name of the site that is currently active
-                                                    in OU Campus.
-            user        jdoe                        The username of the logged-in OU Campus user.
+                                                    in Omni CMS.
+            user        jdoe                        The username of the logged-in Omni CMS user.
             hostbase    /10/#skin/account/site      The starting fragment of all paths of pages in
-                                                    the current OU Campus session. Use this to help
-                                                    construct URLs to OU Campus pages that your
+                                                    the current Omni CMS session. Use this to help
+                                                    construct URLs to Omni CMS pages that your
                                                     gadget can link to or load in the top window.
             
             So, for example, to get the apihost and token values, you would use:
@@ -132,11 +132,11 @@
                 try {
                     message = JSON.parse(message);
                 } catch (e) {
-                    console.log('Cannot parse message from OU Campus app:', message);
+                    console.log('Cannot parse message from Omni CMS app:', message);
                     return;
                 }
             }
-            console.log('Response from OU Campus:', message);
+            console.log('Response from Omni CMS:', message);
             if (message.callback == msgid) {
                 window.removeEventListener('message', _messageHandler, false);
                 deferred.resolve(message.payload);
@@ -158,7 +158,7 @@
             try {
                 message = JSON.parse(message);
             } catch (e) {
-                console.log('Cannot parse message from OU Campus app:', message);
+                console.log('Cannot parse message from Omni CMS app:', message);
                 return;
             }
         }
@@ -166,7 +166,7 @@
             // the message listener in sendMessageToTop will handle this message
             return;
         }
-        console.log('Message from OU Campus:', message);
+        console.log('Message from Omni CMS:', message);
         if (message.name == 'configuration') {
             self.setConfig(message.payload);
         }
@@ -248,7 +248,7 @@
             }
         },
         fetch: function () {
-            // A convenience method to get the gadget's configuration as stored in the OU Campus
+            // A convenience method to get the gadget's configuration as stored in the Omni CMS
             // database by calling the /gadgets/view API. On a successful API call, the method
             // saves the config into the Gadget instance; you can then use `getConfig` to get
             // specific properties of the configuration.
@@ -282,7 +282,7 @@
         },
         save: function (arg0, arg1) {
             // A convenience method to set one or more properties of the gadget's configuration
-            // back to the OU Campus database by calling /gadgets/configure.
+            // back to the Omni CMS database by calling /gadgets/configure.
             //
             // The method returns a jQuery Deferred object, so you can use methods like `then`
             // to do stuff once the API call has received a response.
@@ -312,30 +312,30 @@
         // Each of the "ouc" methods below is an asynchronous method that returns a jQuery Deferred
         // object, so you can use methods like `then` to do stuff once the operation is finished.
         oucGetCurrentFileInfo: function () {
-            // Causes OU Campus to respond with information about the current file in OU Campus, if
+            // Causes Omni CMS to respond with information about the current file in Omni CMS, if
             // the current view is file-specific.
             return sendMessageToTop('get-current-file-info');
         },
         oucInsertAtCursor: function (content) {
-            // Causes OU Campus to insert the content at the cursor location in, and only in, a WYSIWYG
+            // Causes Omni CMS to insert the content at the cursor location in, and only in, a WYSIWYG
             // editor (such as JustEdit) and the source code editor.
             return sendMessageToTop('insert-at-cursor', content);
         },
         oucGetCurrentLocation: function () {
-            // Causes OU Campus to respond with the app window's location info.
+            // Causes Omni CMS to respond with the app window's location info.
             return sendMessageToTop('get-location');
         },
         oucSetCurrentLocation: function (route) {
             /*
-                Causes OU Campus to set the "route" of the OU Campus application. The route is the
+                Causes Omni CMS to set the "route" of the Omni CMS application. The route is the
                 portion of the app's location that follows the sitename. For example, if the
                 current app URL is
                 
                 "http://a.cms.omniupdate.com/10/#oucampus/gallena/art/browse/staging/about"
                 
                 then the route is "/browse/staging/about". Changing the route will effectively
-                change the current OU Campus view, just as if the user had clicked a link within
-                OU Campus.
+                change the current Omni CMS view, just as if the user had clicked a link within
+                Omni CMS.
                 
                 This method accepts a single string parameter, which is the new route. It should
                 start with a slash. After the route has been changed, the method will respond with
@@ -366,7 +366,7 @@
         /*
          * MetaData API
          *
-         * @description :: API to interact with OU Campus gadget Metadata backend
+         * @description :: API to interact with Omni CMS gadget Metadata backend
          * @documentation :: https://docs
          *
          * @method Metadata

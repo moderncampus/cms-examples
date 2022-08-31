@@ -48,7 +48,7 @@
 	
 	<!-- 	Editable region. An ouc:div defines an editable region so a user can edit content within the WYSIWYG editor. Every ouc:div must have a unique label. 
 			The ouc:editor defines the CSS styling in the WYSIWYG editor for this editable region.
-			More information here: https://support.omniupdate.com/technical-reference/developer/page-tagging.html -->
+			More information here: https://support.moderncampus.com/technical-reference/templates/page-tagging/ -->
 	<ouc:div label="maincontent" group="Everyone" button-text="Main Content">
 		<ouc:editor csspath="/_resources/ou/editor/content.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="maincontent" width="1020" />
 		<p><img style="margin: 15px; float: right;" src="http://placehold.it/81x81" alt="Lorem ipsum" />Googoo ya gaa laalaa da da laa. Laa laa doodoo gaagaa laa doo da gaagaa ga moo-moo laa doodoo. Dada da doo laa da gaa yaya yaya googoo gaga da. Gaa da doo laalaa gaga gaagaa yaya gaagaa doo doodoo. Gaagaa brekkie laa dada doodoo. Dada gaagaa da da gaa ga ga. Gaa ya googoo doodoo gaagaa yaya. Googoo googoo da laa dada ya. Laalaa googoo dada laalaa laalaa doodoo. Ga num nums laa doodoo pee-pee laa gaagaa googoo da gaagaa ga da. Wuv doodoo huggle ga doodoo poo-poo. Ya ya gaga gaagaa yaya yaya.</p>

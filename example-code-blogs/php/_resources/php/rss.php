@@ -29,7 +29,7 @@
 		<language>en-us</language>
 		<lastBuildDate><?php echo date("D, d M o H:i:s O"); ?></lastBuildDate>
 		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
-		<generator>OmniUpdate (OU Publish)</generator>
+		<generator>Modern Campus (OU Publish)</generator>
 		<?php  if (count($posts) > 0) :
 		$items = 0;
 		foreach($posts as $key=>$p): 

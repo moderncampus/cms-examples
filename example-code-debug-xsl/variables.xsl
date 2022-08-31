@@ -29,9 +29,9 @@
 	xmlns:ouc="http://omniupdate.com/XSL/Variables"
 	exclude-result-prefixes="ou xsl xs fn ouc">
 	
-	<!-- OU CAMPUS SYSTEM PARAMETERS - don't edit -->
+	<!-- Omni CMS SYSTEM PARAMETERS - don't edit -->
 	<!-- Current Page Info -->
-	<xsl:param name="ou:action"/>					 <!-- Page 'state' in OU Campus (prv = Preview, pub = Publish, edt = Edit, cmp = Compare) -->
+	<xsl:param name="ou:action"/>					 <!-- Page 'state' in Omni CMS (prv = Preview, pub = Publish, edt = Edit, cmp = Compare) -->
 	<xsl:param name="ou:uuid"/>						 <!-- Unique Page ID -->
 	<xsl:param name="ou:path"/>						 <!-- Root-relative path to page output -->
 	<xsl:param name="ou:dirname"/>					 <!-- Root-relative path to current folder (USE "dirname" BELOW INSTEAD) -->
@@ -104,7 +104,7 @@
 	<xsl:variable name="breadcrumb" select="ou:pcf-param('breadcrumb')" />
 	<xsl:variable name="heading" select="ou:pcf-param('heading')" />
 	
-	<!-- OU Campus action state variables -->
+	<!-- Omni CMS action state variables -->
 	<xsl:variable name="is-pub" select="$ou:action = ('pub','cmp')"/> 	<!-- Returns true if the page is in Publish or Compare Mode -->
 	<xsl:variable name="is-edt" select="$ou:action = 'edt'"/> 			<!-- Returns true if the page is in Edit Mode -->
 	<xsl:variable name="is-prv" select="$ou:action = 'prv'"/> 			<!-- Returns true if the page is in Preview Mode -->

@@ -312,7 +312,7 @@ namespace OUC{
 			string language = "en-us";
 			string lastBuildDate = String.Format("{0:ddd, dd MMM yyyy HH:mm:ss zzz}", DateTime.Now);
 			string docs = "http://blogs.law.harvard.edu/tech/rss";
-			string generator = "OmniUpdate (OU Publish)";
+			string generator = "Modern Campus (OU Publish)";
 
 			rssFeed += "<rss xmlns:media=\"http://search.yahoo.com/mrss/\" version=\"2.0\"><channel>";
 
