@@ -41,7 +41,7 @@ After you have installed Ruby and ensure the above gems are also installed, your
 This package contains code for a small sample website that can be used in Omni CMS and will be the destination for your migrated WordPress content. 
 
 ### Installation
- 1. Navigate to Modern Campus's example code for a [Simple Site](https://github.com/omniupdate/example-code-simple-site) and download the package as a Zip file.
+ 1. Navigate to Modern Campus's example code for a [Simple Site](https://github.com/moderncampus/omni-cms-examples/tree/main/example-code-simple-site) and download the package as a Zip file.
  2. Upload the downloaded Simple Site Zip file to the root of your Omni CMS site using Omni CMS' Zip Import feature, which will also extract the files for you. 
  3. If the Simple Site is on a C# server then configure the ASP includes in the `functions.xsl` file. Also change PCF extensions via Find and Replace to the desired extension (if not `php`). A sample regex to perform this replace is below:
 
