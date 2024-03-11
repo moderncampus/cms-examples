@@ -17,7 +17,7 @@
          in both places, enter "dashboard, sidebar". -->
     <entry key="types" private="true">dashboard, sidebar</entry>
     
-    <!-- This entry, if present, causes Omni CMS to forward notifications of the specified 
+    <!-- This entry, if present, causes Modern Campus CMS to forward notifications of the specified 
          type(s) to the gadget. Enter one or more notification types separated by commas. -->
     <entry key="notifications" private="true">message</entry>
     
@@ -53,7 +53,7 @@
 <!-- Sidebar contexts
     
     If the sidebar_context property is specified, the sidebar gadget will only appear when the 
-    Omni CMS app is "in" the specified context. Curent supported contexts are as follows:
+    Modern Campus CMS app is "in" the specified context. Curent supported contexts are as follows:
     
     "page"              : True when the subject of the current view is an individual page. Examples include
                           page preview, page edit, and page properties.

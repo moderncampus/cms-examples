@@ -1,4 +1,4 @@
-***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Omni CMS.***
+***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Modern Campus CMS.***
 
 # LDP Installation
 
@@ -38,7 +38,7 @@ Before editing any files, determine if the production server is using .NET 3.5 o
 
 Retrieve the  correct .NET Connector from the `SSM Connectors` subfolder of this package.
 
-Find the Site's UUID from within Omni CMS under Setup->Sites. Open the `web.config` file and find line 14.
+Find the Site's UUID from within Modern Campus CMS under Setup->Sites. Open the `web.config` file and find line 14.
 
 `<add key="siteuuid" value="6f01b824-70f9-4f5d-9202-3b4ac4f79e10"/>`
 

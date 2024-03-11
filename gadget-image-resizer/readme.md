@@ -1,4 +1,4 @@
-***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Omni CMS.***
+***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Modern Campus CMS.***
 
 ### Image Resizer Gadget
 The Image Resizer is a custom gadget that scales down one or more images to specific resolutions based on presets managed by admin users. Then the files are uploaded to staging and published to production. The gadget can be used from the Dashboard or Sidebar.

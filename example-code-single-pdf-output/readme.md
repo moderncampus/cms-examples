@@ -1,4 +1,4 @@
-﻿***The included source code, service, and the information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for all users and may not be compatible with all implementations of Omni CMS.***
+﻿***The included source code, service, and the information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for all users and may not be compatible with all implementations of Modern Campus CMS.***
 # Single PDF output
 This repository provides XSL containing how to make a PCF file have a secondary output of PDF. This all exists in the folder `single-pdf-output`.
 ## single-pdf.pcf
@@ -23,4 +23,4 @@ This repository provides XSL containing how to make a PCF file have a secondary 
 ## Helpful Tips
 - XSL-FO has a very strict syntax. Even though it looks like regular XML, certain nodes have to exist as children or parents of other nodes. Errors will occur if you do not follow the XSL-FO syntax.
 - When working with XSL-FO, you must only use the fo namespace nodes. You can also create custom fo nodes if needed.
-- To debug the XSL-FO structure, you can use the `.fo.xml` output in your pcf-stylesheet declaration to see the structure of the XSL-FO of what is being sent to Omni CMS to create the actual PDF output.
+- To debug the XSL-FO structure, you can use the `.fo.xml` output in your pcf-stylesheet declaration to see the structure of the XSL-FO of what is being sent to Modern Campus CMS to create the actual PDF output.

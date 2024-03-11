@@ -92,7 +92,7 @@ def update_plugin_references(path, content)
   new_content.gsub!(/[\n]/, "<br/>")
   new_content.gsub!("--> <br/> <!--", "--> \n <!--")
 
-  #ensure returned contnet is valid xhtml for Omni CMS PCFs
+  #ensure returned contnet is valid xhtml for Modern Campus CMS PCFs
   new_content = Nokogiri.HTML(new_content).xpath("//body/node()").to_xhtml() 
 
   return new_content
@@ -184,7 +184,7 @@ def migrate_file(item, template, new_path)
     "”"||"|"||"<"||">"||"{"||"}"||";"||":"||","||"+"||"="
 
     @char_log.puts "-----------------------------------------------------------------------------------------------------------------------"
-    @char_log.puts "Your old path: ", rr_output_file_path, "Contains special charcters that are not allowed in Omni CMS.", "*We've modified your path.", "Your new path is:"
+    @char_log.puts "Your old path: ", rr_output_file_path, "Contains special charcters that are not allowed in Modern Campus CMS.", "*We've modified your path.", "Your new path is:"
     #remove special characters from path
     @char_log.puts rr_output_file_path = rr_output_file_path.gsub(/[\!\#\$\%\^\&\*\(\)\[\]\?\’\”\|<>{};:,\+\=]/, "")
     @char_log.puts "-----------------------------------------------------------------------------------------------------------------------"

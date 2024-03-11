@@ -1,4 +1,4 @@
-***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Omni CMS.***
+***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Modern Campus CMS.***
 
 # Course Catalog
 
@@ -20,7 +20,7 @@ Instructions
 Note, if adding a catalog to an existing project that follows closely with the existing implementation skeleton, you can follow these steps:
 
 - Download _resources directory of the current site.
-- Create new site in Omni CMS.
+- Create new site in Modern Campus CMS.
 - Upload _resources directory from the old site.
 - Upload course catalog skeleton.
 - Publish current/_data and current/_config.pcf 

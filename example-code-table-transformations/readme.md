@@ -1,4 +1,4 @@
-***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Omni CMS.***
+***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Modern Campus CMS.***
 
 # Table Transformations
 
@@ -6,7 +6,7 @@ This package contains all the basic code that is needed to get started using Tab
 
 ## Overview
 
-Omni CMS uses editable regions to make editing pages easy. The WYSIWYG editor has many great features that allow you to insert, edit, and format your content in a variety of ways without the need for the end user to understand how the underlying code functions. However, there is often a need to add a more complex HTML element on a page that cannot be easily edited in the WYSIWYG. Typically, these elements would need to be identified and managed in a separate location than the editable region. This can be accomplished through solutions such as Assets or modifying the XSL templates to allow for MultiEdit or some other mechanism to handle the complex HTML element that lies between two editable regions. 
+Modern Campus CMS uses editable regions to make editing pages easy. The WYSIWYG editor has many great features that allow you to insert, edit, and format your content in a variety of ways without the need for the end user to understand how the underlying code functions. However, there is often a need to add a more complex HTML element on a page that cannot be easily edited in the WYSIWYG. Typically, these elements would need to be identified and managed in a separate location than the editable region. This can be accomplished through solutions such as Assets or modifying the XSL templates to allow for MultiEdit or some other mechanism to handle the complex HTML element that lies between two editable regions. 
 
 In such cases, it can sometimes be useful to employ Table Transformation snippets, which allow the user to drop a more complex HTML structure in the middle of an editable region with a simpler, more form-based editable experience utilizing a table. When the edits are made and the page saved, the previewed and published page will show the complex HTML structure, but the editing experience will utilize a simple table, which the WYSIWYG editor can manipulate and edit easily. 
 
@@ -29,7 +29,7 @@ The following steps will allow you to add table transformations to an existing i
 1. **Upload the table-transformations.xsl file** to `/_resources/xsl/_toolkit/`. This is where the template matches for each new table transformation will be placed. This should be imported from the standard `/_resources/xsl/common.xsl` file so it will be available on your pages. 
 2. **Ensure that the XSL Identity Matches exist** (typically placed in `/_resources/ou/_shared/template-matches.xsl` and are imported from `/_resources/xsl/ou/common.xsl`). This package contains code for the Identity Matches in the template-matches.xsl file, but if it's not in the suggested location, it should be placed in a central, shared location. In addition, any regions that will utilize a template match should be called in the XSL using <xsl:apply-templates> instead of <xsl:copy-of>. Otherwise, the content will never be matched and the tables will not be transformed into the desired output. 
 3. **Upload the table-transformations.css file** to `/_resources/ou/editor/` and add the following line to the current wysiwyg.css file in that same directory: `@import 'table-transformations.css';`. This enables styling for all tables that will be transformed. This file can be edited for additional helper text for individual table transformations as well, using standard CSS styles. 
-4. **Upload each of the table transformation snippet files from this package** (located in `/snippets`) to `/_resources/snippets` or another desired location. Each of these files will need to then be added to Omni CMS as snippets, which will allow the end user to insert the table transformations into their editable regions. More information on how to do this step can be found on the [Omni CMS Support Site](https://support.moderncampus.com/learn-omni-cms/snippets/create-manage.html). 
+4. **Upload each of the table transformation snippet files from this package** (located in `/snippets`) to `/_resources/snippets` or another desired location. Each of these files will need to then be added to Modern Campus CMS as snippets, which will allow the end user to insert the table transformations into their editable regions. More information on how to do this step can be found on the [Modern Campus CMS Support Site](https://support.moderncampus.com/cms/snippets/create-manage.html). 
 
 ## Creating a New, Custom Table Transformation
 
@@ -47,7 +47,7 @@ The primary purpose of a table transformation is to make code more easily editab
 2. Be easy for the end user to understand and edit. 
 3. Have a logical pattern that can be targeted with XSL to produce the desired output. 
 
-It is usually easiest to create your table in a PCF page's editable region using Omni CMS' source code editor. During the XSL development of the transformation, it is easy to then preview the page to see the effect the XSL code has on the table. 
+It is usually easiest to create your table in a PCF page's editable region using Modern Campus CMS' source code editor. During the XSL development of the transformation, it is easy to then preview the page to see the effect the XSL code has on the table. 
 
 _The table will need a specific, unique identifier._ Typically this is achieved by adding a class to the table. This allows the XSL to target the table and transform its contents. The CSS in this package has been created to style all tables that have a class beginning with `omni-` for consistency. 
 
@@ -85,6 +85,6 @@ Putting these 3 steps together, a typical flow to code this would be to first cr
 
 This simply consists of taking your new table structure and saving it as a new HTML file with no additional code. The snippet files in this package are under `/_resources/snippets/`. 
 
-### Step 5: Add Snippet to Omni CMS
+### Step 5: Add Snippet to Modern Campus CMS
 
-Adding the snippet to Omni CMS will allow the end user to enter an editable region and add the table transformation snippet on the page. This step takes the raw source code from the snippet file and inserts it into the editable region, ready for adding and editing content. More information on how to do this step can be found on the [Omni CMS Support Site](https://support.moderncampus.com/learn-omni-cms/snippets/create-manage.html). 
+Adding the snippet to Modern Campus CMS will allow the end user to enter an editable region and add the table transformation snippet on the page. This step takes the raw source code from the snippet file and inserts it into the editable region, ready for adding and editing content. More information on how to do this step can be found on the [Modern Campus CMS Support Site](https://support.moderncampus.com/cms/snippets/create-manage.html). 

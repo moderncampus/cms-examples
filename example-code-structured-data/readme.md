@@ -1,4 +1,4 @@
-﻿***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Omni CMS.***
+﻿***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Modern Campus CMS.***
 
 # Structured Data
 - The files in this directory are intended to generate structured data in JSON-LD format. Additional information, entities, and attributes can be found on the [schema.org](https://schema.org) website.
@@ -25,8 +25,8 @@ Structured data for Blog Postings should contain the following:
 ```
 Type - hardcoded in XSL
 Headline - from page parameter heading 
-datePublished - date created in Omni CMS 
-dateModified - date published in Omni CMS
+datePublished - date created in Modern Campus CMS 
+dateModified - date published in Modern Campus CMS
 image - first one in main content or hardcoded in XSL (Absolute URL w/ height and width to scale appropriately)
 author - page parameter or user First & Last name
 publisher - entity or university
@@ -37,8 +37,8 @@ Structured data for News Articles should contain the following:
 ```
 Type - hardcoded in XSL
 Headline - from page parameter heading 
-datePublished - date created in Omni CMS 
-dateModified - date published in Omni CMS
+datePublished - date created in Modern Campus CMS 
+dateModified - date published in Modern Campus CMS
 image - first one in main content or hardcoded in XSL (Absolute URL w/ height and width to scale appropriately)
 author - page parameter or user First & Last name
 publisher - entity or university
