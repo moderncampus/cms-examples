@@ -1,4 +1,4 @@
-***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Omni CMS.***
+***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Modern Campus CMS.***
 
 # Faculty Directory - with jQuery Datatables
 
@@ -57,8 +57,8 @@ profile_landing.tmpl | YES | Creates the profile landing page to list the profil
 The following steps will allow you to add a simple Faculty Directory to your templates. 
 
 1. **Upload the package files** to their respective locations, as reflected in the directory structure. 
- - XSL files should be placed in `/_resources/xsl/_profiles/`. These files do not need to be published, but it is recommended to [save a version](https://support.moderncampus.com/learn-omni-cms/pages-files/review/versions.html) each time changes are made. 
- - TCF/TMPL files should be placed in your site's templates folder, typically `/_resources/xsl/ou/templates/`. If your site uses Remote templates as defined in the [site settings](https://support.moderncampus.com/learn-omni-cms/administration/setup/sites/settings.html#productionserverftpsettings), you will need to publish these files as well. 
+ - XSL files should be placed in `/_resources/xsl/_profiles/`. These files do not need to be published, but it is recommended to [save a version](https://support.moderncampus.com/cms/pages-files/review/versions.html) each time changes are made. 
+ - TCF/TMPL files should be placed in your site's templates folder, typically `/_resources/xsl/ou/templates/`. If your site uses Remote templates as defined in the [site settings](https://support.moderncampus.com/cms/administration/setup/sites/settings.html#productionserverftpsettings), you will need to publish these files as well. 
 
 2. **Update the PCF files** with the information you wish to display. You may add or remove the given fields to contain the information you would like displayed in your faculty directory. 
  - **All information that should be aggregated to the listing page must appear as MultiEdit fields in the <profile> node.** This is important to ensure the data is consistent for the individual XML output for each profile. 
@@ -75,7 +75,7 @@ The following steps will allow you to add a simple Faculty Directory to your tem
  <xsl:value-of select="firstname" />
  ``` 
   - Update helper.xsl, line 19, with your output extension so the proper links will be generated on the listing page. The default in this package shows `.html`. 
-  - If your implementation does not use the current Omni CMS starter templates, you will need to be sure the XSL template named page-template is either called or updated to what your XSL uses. The same goes for the headcode/footcode. 
+  - If your implementation does not use the current Modern Campus CMS starter templates, you will need to be sure the XSL template named page-template is either called or updated to what your XSL uses. The same goes for the headcode/footcode. 
   - If you already have an interior template, it may be helpful to copy the code from your interior XSL and change the call to the main content editable region to a call to page-template, such as:
  ```
  <xsl:call-template name="page-template" />

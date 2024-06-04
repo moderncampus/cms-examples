@@ -1,4 +1,4 @@
-***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Omni CMS.***
+***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Modern Campus CMS.***
 
 # Social Meta Tags
 
@@ -18,7 +18,7 @@ By default, the following Open Graph tags will be outputted, pulling content fro
 | --- | --- | --- | 
 | `og:image` | The URL of the image that appears when someone shares the content to Facebook. | Directory Variable: `og-image` | 
 | `og:title` | The title of your article without any branding such as your site name. | The page's `<title>` node, found by the XPath expression: `ouc:properties/title/text()`. | 
-| `og:url` | The canonical URL for your page. This should be the undecorated URL, without session variables, user identifying parameters, or counters. | The page's fully qualified URL when published from Omni CMS. | 
+| `og:url` | The canonical URL for your page. This should be the undecorated URL, without session variables, user identifying parameters, or counters. | The page's fully qualified URL when published from Modern Campus CMS. | 
 | `og:description` | A brief description of the content, usually between 2 and 4 sentences. | The page's meta description content, found by the XPath expression: `ouc:properties/meta[@name='description']/@content`. | 
 | `og:site_name` | The name that you would like your website to be recognized by. | Directory Variable: `og-site-name` | 
 | `og:type` | The type of media of your content. This tag impacts how your content shows up in News Feed. | This is hardcoded to the default value of `website`. | 
@@ -50,22 +50,22 @@ The following Twitter cards are commented out in the XSL by default, as Twitter 
 
 | Twitter Card Tag | Tag Description | Content Location | 
 | --- | --- | --- | 
-| `twitter:url` | The canonical URL for your page. This should be the undecorated URL, without session variables, user identifying parameters, or counters. | The page's fully qualified URL when published from Omni CMS. | 
+| `twitter:url` | The canonical URL for your page. This should be the undecorated URL, without session variables, user identifying parameters, or counters. | The page's fully qualified URL when published from Modern Campus CMS. | 
 | `twitter:title` | Title of content (max 70 characters) | The page's `<title>` node, found by the XPath expression: `ouc:properties/title/text()`. | 
 | `twitter:description` | Description of content (maximum 200 characters) | The page's meta description content, found by the XPath expression: `ouc:properties/meta[@name='description']/@content`. | 
 | `twitter:image` | URL of image to use in the card. Images must be less than 5MB in size. | Directory Variable: `twitter-image`. Defaults to `og-image` directory variable if left blank. |
 
 ## Using the Starter Code
 
-Perform the steps below to automatically add social media meta tags to your Omni CMS pages.
+Perform the steps below to automatically add social media meta tags to your Modern Campus CMS pages.
 
-1. **Upload** the `social-meta.xsl` file to Omni CMS.
- - This XSL file should be placed in `/_resources/xsl/_shared/`. XSL files do not need to be published, but it is recommended to [save a version](https://support.moderncampus.com/learn-omni-cms/pages-files/review/versions.html) each time changes are made. 
+1. **Upload** the `social-meta.xsl` file to Modern Campus CMS.
+ - This XSL file should be placed in `/_resources/xsl/_shared/`. XSL files do not need to be published, but it is recommended to [save a version](https://support.moderncampus.com/cms/pages-files/review/versions.html) each time changes are made. 
 
 2. **Update existing XSL** to use the social meta tags code. This will require modifying `common.xsl` or another XSL file that outputs content within a page's `<head>` tag. Once you have located this key file, make the adjustments to this file as described below. 
  - *Import* the `social-meta.xsl` file. This statement should look something like the following: `<xsl:import href="_shared/social-meta.xsl" />`. This should be a page-relative path from the XSL that is importing this code. 
  - *Call the XSL Template* from within the `<head>` tag using the following statement: `<xsl:call-template name="social-meta" />`. 
 
 3. **Verify** the social meta tags are working by one of the following methods: 
- - Preview a page in Omni CMS and view the frame source, or Publish a page from Omni CMS and view the page source. You should see a series of Open Graph and Twitter Card tags appearing within the page's `<head>` tag. If you do not see these tags, ensure the page you are testing with is using the XSL that was modified, or is importing the XSL that was modified to call this package's social meta template. 
- - Publish a page from Omni CMS that uses this XSL, then go to a social media network and put a link to the published page in the post. Typically, you can see a preview of the information before posting and can visually verify the social media meta tags are populating the post information from the information in Omni CMS. 
+ - Preview a page in Modern Campus CMS and view the frame source, or Publish a page from Modern Campus CMS and view the page source. You should see a series of Open Graph and Twitter Card tags appearing within the page's `<head>` tag. If you do not see these tags, ensure the page you are testing with is using the XSL that was modified, or is importing the XSL that was modified to call this package's social meta template. 
+ - Publish a page from Modern Campus CMS that uses this XSL, then go to a social media network and put a link to the published page in the post. Typically, you can see a preview of the information before posting and can visually verify the social media meta tags are populating the post information from the information in Modern Campus CMS. 

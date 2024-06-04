@@ -22,8 +22,8 @@ Structured data for a News Article should contain the following:
 
 	Type - hardcoded in XSL
 	Headline - from page parameter heading
-	datePublished - date created in Omni CMS
-	dateModified - date published in Omni CMS
+	datePublished - date created in Modern Campus CMS
+	dateModified - date published in Modern Campus CMS
 	image - first one in main content or hardcoded in XSL (Absolute URL w/ height and width to scale appropriately)
 	author - page parameter or user First & Last name
 	publisher - entity or university

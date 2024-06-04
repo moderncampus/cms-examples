@@ -54,7 +54,7 @@ A useful XSL for variable reference, testing, & debugging. It is not intended fo
 
 					<div class="row">
 						<div class="col-md-6">
-							<h3>Omni CMS System Variables</h3>
+							<h3>Modern Campus CMS System Variables</h3>
 							<p>These are parameters provided by the system, instantiated in vars.xsl</p>
 							<hr/>
 							<h4>File/Directory</h4><em>Page or directory specific</em>

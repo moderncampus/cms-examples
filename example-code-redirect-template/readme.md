@@ -1,8 +1,8 @@
-***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Omni CMS.***
+***The included source code, service and information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for advanced users and may not be compatible with all implementations of Modern Campus CMS.***
 
 # Redirect Template
 
-This is an Omni CMS template (TCF, TMPL, Image) that creates a simple meta redirect page. This allows you to create a "page" in a folder named `/rd` that will effectively become a short URL that points to the full page. 
+This is an Modern Campus CMS template (TCF, TMPL, Image) that creates a simple meta redirect page. This allows you to create a "page" in a folder named `/rd` that will effectively become a short URL that points to the full page. 
 
 ## PHP Redirect
 

@@ -16,16 +16,16 @@
 
 ### Example case for 2 column layout
 - First Element has `row_start=true;row_col_count=2;`
-- Second Element `row_end=true;rol_col_count=2;`
+- Second Element `row_end=true;row_col_count=2;`
 
 ### Example Case for 3 column layout
 - First Element has `row_start=true;row_col_count=3;`
-- Second Element `rol_col_count=3;`
+- Second Element `row_col_count=3;`
 - Third Element `row_end=true;row_col_count=3;`
 
 ### Example Case for 4 column layout
 - First Element has `row_start=true;row_col_count=4;`
-- Second Element `rol_col_count=4;`
+- Second Element `row_col_count=4;`
 - Third Element `row_col_count=4;`
 - Fourth Element `row_end=true;row_col_count=4;`
 - 

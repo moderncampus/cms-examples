@@ -31,7 +31,7 @@ Applicable to individual html output.
 	
     <!-- Copy the content on no match -->
 	<xsl:mode on-no-match="shallow-copy"/>
-	<!-- This resolves the issue with the edit mode of Omni CMS -->
+	<!-- This resolves the issue with the edit mode of Modern Campus CMS -->
 	<xsl:template match="processing-instruction('pcf-stylesheet')" mode="#all"/>
 	
     <!-- MISC -->

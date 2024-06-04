@@ -1,4 +1,4 @@
-***The included source code, service, and the information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for all users and may not be compatible with all implementations of Omni CMS.***
+***The included source code, service, and the information is provided as is, and Modern Campus makes no promises or guarantees about its use or misuse. The source code provided is recommended for all users and may not be compatible with all implementations of Modern Campus CMS.***
 
 # Non-HTML File Link Accessibility
 **This tool is only intended to be used on Omniupdate CMS sites running PHP on their production server.**
@@ -27,7 +27,7 @@ With some minor modifications to the code, you can also update, remove or add fi
 
 ### Installation of Non-HTML File Link Accessibility.
 1. Download this repository as a Zip file. 
-2. Upload the downloaded Non-HTML File Link Accessibility Zip file to the root of our Omni CMS site using Omni CMS' Zip Import feature, which will also extract the files for you. 
+2. Upload the downloaded Non-HTML File Link Accessibility Zip file to the root of our Modern Campus CMS site using Modern Campus CMS' Zip Import feature, which will also extract the files for you. 
 3. After the upload is complete, navigate to `/_resources/php/non-html-file-link-accessibility` and publish this entire folder. 
 4. Add `<xsl:import href="_shared/non-html-file-link-accessibility.xsl"/>` to the import statements near the top of your `common.xsl` file, often located at `/_resources/xsl/common.xsl`.
   	- You may need to adjust this path and/or the XSL file location depending on your particular setup.
