@@ -1,7 +1,7 @@
 /*
     gadgetlib.js v1.0.7.1
     Copyright 2015 Modern Campus, Inc.
-    http://www.omniupdate.com/
+    https://moderncampus.com/
 
     Changes in 1.0.7.1:
       - gadgetlib.min.js is now offered.
