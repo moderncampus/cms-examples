@@ -354,7 +354,15 @@
         },
         oucGetSourceContent: function () {
             return sendMessageToTop('get-source-content'); 
-        }
+        },
+        // Will be enabled in 2025.3 release
+		oucSetGadgetHeight: function (height) {
+			return sendMessageToTop('set-gadget-height', {
+				gid: gadget.gid,
+				place: gadget.place,
+				height: height || document.body.offsetHeight,
+			});
+		},
     };
     
     // bind all methods to the gadget object
