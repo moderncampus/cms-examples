@@ -1,7 +1,10 @@
 /*
-    gadgetlib.js v1.0.7.1
+    gadgetlib.js v1.1.0
     Copyright 2015 Modern Campus, Inc.
     https://moderncampus.com/
+
+    Changes in 1.1.0
+      - Added the `oucSetGadgetHeight` method, which was be enabled in the 2025.3 release of Modern Campus CMS
 
     Changes in 1.0.7.1:
       - gadgetlib.min.js is now offered.
