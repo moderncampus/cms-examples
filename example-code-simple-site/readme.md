@@ -4,7 +4,7 @@
 - This package contains code for a small sample website that can be used in Modern Campus CMS.
 
 ## Installation
-1. Compress _nav.inc, _props.pcf, _resources, about, index.pcf into a zip file
+1. Compress _nav.ounav, _resources, about, index.pcf into a zip file
 2. Upload the compressed file
 3. Publish all files
 4. Navigate to the published pages and see if the content renders correctly
