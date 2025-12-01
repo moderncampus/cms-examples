@@ -4,7 +4,7 @@
     https://moderncampus.com/
 
     Changes in 1.1.0
-      - Added the `oucSetGadgetHeight` method, which was be enabled in the 2025.3 release of Modern Campus CMS
+      - Added the `oucSetGadgetHeight` method, which was enabled in the 2025.3 release of Modern Campus CMS
 
     Changes in 1.0.7.1:
       - gadgetlib.min.js is now offered.
@@ -358,7 +358,6 @@
         oucGetSourceContent: function () {
             return sendMessageToTop('get-source-content'); 
         },
-        // Will be enabled in 2025.3 release
 		oucSetGadgetHeight: function (height) {
 			return sendMessageToTop('set-gadget-height', {
 				gid: gadget.gid,
