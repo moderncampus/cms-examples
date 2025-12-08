@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE xsl:stylesheet>
-<!-- Simple Site Skeleton 10/2/18 -->
-<xsl:stylesheet version="3.0" 
+<!-- Simple Site Skeleton 12/8/25 -->
+<xsl:stylesheet version="3.0" expand-text="yes"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 xmlns:xs="http://www.w3.org/2001/XMLSchema"
 xmlns:ou="http://omniupdate.com/XSL/Variables"
@@ -9,19 +9,19 @@ xmlns:fn="http://omniupdate.com/XSL/Functions"
 xmlns:ouc="http://omniupdate.com/XSL/Variables"
 exclude-result-prefixes="xsl xs ou fn ouc">
 	
-	<xsl:import href="variables.xsl"/>
-	<xsl:import href="functions.xsl"/>
-	<xsl:import href="breadcrumb.xsl"/>
-	
+	<xsl:import href="_shared/variables.xsl"/>
+	<xsl:import href="_shared/functions.xsl"/>
+	<xsl:import href="_shared/cms-breadcrumb.xsl"/>
+	<xsl:import href="_shared/breadcrumb.xsl"/>
+
 	<!-- Default: for HTML5 use below output declaration -->
 	<xsl:output method="html" version="5.0" indent="yes" encoding="UTF-8" include-content-type="no"/>
-	
 	<xsl:template match="/document">
 		<html lang="en">
 			<head>
 				<xsl:copy-of select="ou:include-file('/_resources/includes/headcode.inc')"/>
 				<xsl:apply-templates select="headcode/node()" mode="copy"/>
-				<title><xsl:value-of select="$pageTitle"/></title>			
+				<title><xsl:value-of select="$pageTitle"/></title>
 				<xsl:apply-templates select="/document/ouc:properties[@label='metadata']/meta[string-length(@content)>0]" mode="copy"/>
 			</head>
 			<body>
@@ -48,4 +48,6 @@ exclude-result-prefixes="xsl xs ou fn ouc">
 		<xsl:apply-templates mode="#current"/>
 	</xsl:template>
 	<xsl:template name="page-content" />
+	
+
 </xsl:stylesheet>

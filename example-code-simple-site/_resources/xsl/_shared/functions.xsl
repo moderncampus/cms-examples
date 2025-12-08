@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE xsl:stylesheet>
-<!-- Simple Site Skeleton 10/2/18 -->
+<!-- Simple Site Skeleton 12/8/25 -->
 <xsl:stylesheet version="3.0" 
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -56,5 +56,68 @@
 			<xsl:variable name="result"><xsl:value-of select="concat($firstletter1,$rest1,' ')" /> </xsl:variable>
 			<xsl:value-of select="$result" />
 		</xsl:for-each>
+	</xsl:function>
+
+	<!-- 
+	PCF PARAMS
+	An extremely useful function for getting page properties without needing to type the full xpath.
+	How to use:
+	The pcf has a parameter, name="page-type". To get the value and store it in an XSL param :
+	<xsl:param name="page-type" select="ou:pcf-param('page-type')"/> 
+	<xsl:param name="props-tile" select="ou:pcf-param('section-title',$props-doc)"/>
+	-->
+
+	<!-- save all page properties in a variable -->
+	<xsl:param name="pcf-params" select="/document/descendant::parameter"/> 
+	
+	<!-- Get PCF params from an external document -->
+	<xsl:function name="ou:pcf-param">
+		<xsl:param name="name" as="xs:string"/>
+		<xsl:param name="doc" as="document-node()?"/>
+		
+		<xsl:if test="$doc">
+			<xsl:variable name="external-params" select="$doc/descendant::parameter"/>
+			<xsl:call-template name="pcf-param">
+				<xsl:with-param name="name" select="$name"/>
+				<xsl:with-param name="pcf-params" select="$external-params"/>
+			</xsl:call-template>
+		</xsl:if>
+	</xsl:function>
+	
+	<!-- Get a param from default parameter list -->
+	<xsl:function name="ou:pcf-param">
+		<xsl:param name="name"/>
+		<xsl:call-template name="pcf-param">
+			<xsl:with-param name="name" select="$name"/>
+		</xsl:call-template>
+	</xsl:function>
+	
+	<!-- Get a param from a provided parameter list -->
+	<xsl:template name="pcf-param">
+		<xsl:param name="name"/>
+		<xsl:param name="pcf-params" select="$pcf-params"/>
+		<xsl:variable name="parameter" select="$pcf-params[@name=$name]"/>
+		<xsl:choose>
+			<xsl:when test="$parameter/@type = 'select' or $parameter/@type = 'radio'">
+				<xsl:value-of select="$parameter/option[@selected = 'true']/@value"/>
+			</xsl:when>
+			<xsl:when test="$parameter/@type = 'checkbox'">
+				<xsl:copy-of select="$parameter/option[@selected = 'true']/@value"/>
+			</xsl:when>
+			<xsl:when test="$parameter/@type = 'asset'">
+				<xsl:copy-of select="$parameter/node()"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="$parameter/text()"/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+		
+	<xsl:function name="ou:get-folder-properties" expand-text="yes">
+		<xsl:param name="folder-path" />
+		<xsl:variable name="dirapi" select="'ou:/Directories/GetProperties?site=' || $ou:site || '&amp;path=' || $folder-path" />
+		<xsl:if test="doc-available($dirapi)">
+			<xsl:copy-of select="doc($dirapi)" />
+		</xsl:if>
 	</xsl:function>
 </xsl:stylesheet>

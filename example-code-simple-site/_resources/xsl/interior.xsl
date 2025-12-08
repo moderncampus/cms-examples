@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE xsl:stylesheet>
-<!-- Simple Site Skeleton 10/2/18 -->
-<xsl:stylesheet version="3.0" 
+<!-- Simple Site Skeleton 12/8/25 -->
+<xsl:stylesheet version="3.0" expand-text="yes"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 xmlns:xs="http://www.w3.org/2001/XMLSchema"
 xmlns:ou="http://omniupdate.com/XSL/Variables"
@@ -11,21 +11,24 @@ exclude-result-prefixes="ou xsl xs fn ouc">
 
 	<xsl:import href="common.xsl"/>
 
+	<xsl:param name="current-breadcrumb">
+		<xsl:choose>
+			<xsl:when test="normalize-space(ou:pcf-param('breadcrumb')) != '' ">{ou:pcf-param('breadcrumb')}</xsl:when>
+			<xsl:otherwise>{ou:pcf-param('heading')}</xsl:otherwise>
+		</xsl:choose>
+	</xsl:param>
+
 	<xsl:template name="page-content">
 		<div class="row">
 			<div class="col-md-12">
-				<ul class="breadcrumb">
-					<xsl:call-template name="breadcrumb">
-						<xsl:with-param name="path" select="$ou:dirname"/>
-					</xsl:call-template>
-				</ul>
+				<xsl:call-template name="output-breadcrumbs" />
 			</div>
 		</div>
 		<div class="row">
 			<xsl:if test="$layout = 'two'">
 				<div class="col-md-3">
 					<ul id="sidenav" class="nav nav-pills nav-stacked">
-						<xsl:copy-of select="ou:include-file(concat($dirname,'_nav.inc'))" />
+						<xsl:copy-of select="ou:include-file(concat($dirname,'_nav.ounav'))" />
 					</ul>
 				</div>
 			</xsl:if>
