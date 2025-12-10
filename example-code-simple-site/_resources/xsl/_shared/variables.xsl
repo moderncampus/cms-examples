@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE xsl:stylesheet>
-<!-- Simple Site Skeleton 10/2/18 -->
+<!-- Simple Site Skeleton 12/8/2025 -->
 <xsl:stylesheet version="3.0" 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -45,4 +45,17 @@
 	<xsl:variable name="pageTitle" select="/document/ouc:properties[@label='metadata']/title" />
 	<xsl:variable name="pageHeading" select="/document/ouc:properties/parameter[@name='heading']"/>
 	<xsl:variable name="layout" select="/document/ouc:properties/parameter[@name='layout']/option[@selected='true']/@value" />
+	
+	<!-- for the following, all are set with start and end slash: /folder/ -->
+	<!-- top level breadcrumb start position used in the breadcrumb.xsl -->
+	<xsl:param name="ou:breadcrumb-start"/>
+	<!-- top level breadcrumb in a cleaned fashion -->
+	<xsl:variable name="breadcrumb-start" select="if (ends-with($ou:breadcrumb-start, '/')) then $ou:breadcrumb-start else concat($ou:breadcrumb-start, '/')"/>
+	<!-- xsl param to set the current breadcrumb value -->
+	<xsl:param name="current-breadcrumb"/>
+
+	<!-- OU Campus action state variables -->
+	<!-- Returns true if the page is in Edit Mode -->
+	<xsl:variable name="is-edt" select="$ou:action = 'edt'"/>
+
 </xsl:stylesheet>

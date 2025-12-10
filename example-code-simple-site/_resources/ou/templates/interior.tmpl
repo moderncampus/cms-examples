@@ -6,13 +6,17 @@
 	<headcode></headcode> <!-- before closing head tag -->
 	<bodycode></bodycode> <!-- after opening body tag -->
 	<footcode></footcode> <!-- before closing body tag -->
-	
+	<ouc:info>
+		<tcf><!--%echo var="tcfname" --></tcf>
+		<tmpl>interior.tmpl</tmpl>
+	</ouc:info>
+
 	<ouc:properties label="metadata">
 		<title><!--%echo var="title" --></title>
-		<meta name="Description" content="<!--%echo var="description" -->" />
-		<meta name="Keywords" content="<!--%echo var="keywords" -->" />
+		<meta name="Description" content="<!--%echo var='description' -->" />
+		<meta name="Keywords" content="<!--%echo var='keywords' -->" />
 	</ouc:properties>
-	
+
 	<ouc:properties label="config">
 		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Page title by default."><!--%echo var="title" --></parameter>
 		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Breadcrumb" alt="Not displayed for index pages. Page title by default."><!--%echo var="title" --></parameter>

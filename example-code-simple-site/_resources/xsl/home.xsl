@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE xsl:stylesheet>
-<!-- Simple Site Skeleton 10/2/18 -->
-<xsl:stylesheet version="3.0" 
+<!-- Simple Site Skeleton 12/8/25 -->
+<xsl:stylesheet version="3.0" expand-text="yes"
 				xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 				xmlns:xs="http://www.w3.org/2001/XMLSchema"
 				xmlns:ou="http://omniupdate.com/XSL/Variables"
@@ -13,10 +13,11 @@
 
 	<xsl:template name="page-content">
 		<div style="margin-bottom: 30px;">
-			<img alt="{$pageTitle}" src="{/document/ouc:properties/parameter[@name='banner-image']}" class="img-responsive"/>
+			<img alt="{$pageTitle}" src="{ou:pcf-param('banner-image')}" class="img-responsive"/>
 		</div>
 		<div class="well">
 			<xsl:apply-templates select="ouc:div[@label='maincontent']" mode="copy" />
 		</div>
 	</xsl:template>
 </xsl:stylesheet>
+
