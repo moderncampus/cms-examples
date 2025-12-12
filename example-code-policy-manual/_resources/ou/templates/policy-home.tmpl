@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/policy-home.xsl" title="HTML" extension="html"?>
+<?pcf-stylesheet path="/_resources/xsl/_dmc/_core/single-item-policy-xml.xsl" title="XML" extension="xml" alternate="yes" ?>
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+
+	<headcode></headcode>	<!-- before closing head tag -->
+	<bodycode></bodycode>	<!-- after opening body tag -->
+	<footcode></footcode>	<!-- before closing body tag -->
+	<ouc:info>
+		<tcf><!--%echo var="tcfname" --></tcf>
+		<tmpl>policy-home.tmpl</tmpl>
+	</ouc:info>
+
+	<ouc:properties label="metadata">
+		<title><!--%echo var="title" --></title>
+		<meta name="Description" content="<!--%echo var='description' -->" />
+		<meta name="Keywords" content="<!--%echo var='keywords' -->" />
+	</ouc:properties>
+
+	<ouc:properties label="config">
+		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Please enter the page heading."></parameter>
+		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Custom Breadcrumb" alt="Default is Page Heading. This is not used on index pages."></parameter>
+		<parameter section="Hero Banner" name="banner-image" type="filechooser" path="/_resources/images" group="Everyone" prompt="Banner Image" alt="Choose an image for the banner hero."></parameter>
+	</ouc:properties>
+	
+	<parameter name="dsn">policies</parameter>
+	
+	<item>
+		<ouc:div label="number" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="number" alt="Enter the policy number."/></ouc:div>
+		<ouc:div label="title" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Title" alt="Enter the title of the policy section."/></ouc:div>
+		<ouc:div label="lastUpdated" group="Everyone" button="hide"><ouc:multiedit type="date" prompt="Last Updated" alt="When was this policy last updated (if applicable)."/></ouc:div>
+	</item>
+
+	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/></ouc:div>
+
+
+	<ouc:div label="additional-content" group="Everyone" button-text="Additional Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="additional-content"/></ouc:div>
+</document>
