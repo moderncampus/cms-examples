@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pcf-stylesheet path="/_resources/xsl/_dmc/_core/data-summary.xsl" title="Summary" extension="html" publish="no"?>
+<?pcf-stylesheet path="/_resources/xsl/_dmc/policies-xml.xsl" title="XML" extension="xml" alternate="yes"?>
+
+
+<!DOCTYPE document SYSTEM "http://commons.omniupdate.com/dtd/standard.dtd">
+
+<document xmlns:ouc="http://omniupdate.com/XSL/Variables">
+
+	<headcode></headcode> <!-- before closing head tag -->
+	<bodycode></bodycode> <!-- after opening body tag -->
+	<footcode></footcode> <!-- before closing body tag -->
+
+	<ouc:properties label="metadata">
+
+	</ouc:properties>
+
+	<!--
+		The dsn is used to filter out XMLs during aggregation that do not have a matching dsn attribute value.
+		When the dsn value is left empty it defaults to the name of this pcf without the extension.
+	-->
+	<parameter name="dsn"></parameter>
+
+	<ouc:properties label="config">
+		<parameter name="aggregation-path" type="text" group="Everyone" prompt="Aggregation Path" alt="Root relative starting path for aggregation. This helps to optimize the how long the aggregation process takes. Mulitple paths can entered separated by commas.">/</parameter>
+<!-- <parameter name="external-xml-url" type="text" group="Everyone" prompt="External XML URL" alt="Absolute URL to external XML.">https://pstools.oudemo.com/dmc/xml/sample2.xml</parameter> -->
+	</ouc:properties>
+
+</document>
