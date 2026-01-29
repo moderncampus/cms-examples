@@ -50,7 +50,10 @@ async function uploadXML(token, site, xmlPath, uploadPath) {
 	// Sets the params for uploading files
 	const params = new URLSearchParams({
 		'site': site,
-		'path': uploadPath
+		'path': uploadPath,
+		//'target': '', // choose upload target. enter same as the site name to upload directly to production
+		//'access': '', // choose access group. leave blank to inherit folder access group
+		//'overwrite': true, // or false
 	}).toString();
 
 	// Sets up the body, which is just the file to upload
@@ -72,8 +75,44 @@ async function uploadXML(token, site, xmlPath, uploadPath) {
 	return result;
 }
 
+/**
+ * Publishes a file
+ *
+ * @token: the token from cmsLogin
+ * @site: the site with the desired file to publish
+ * @publishPath: the path of the file to publish
+ */
+async function publishFile(token, site, publishPath) {
+	const params = new URLSearchParams({
+		'site': site,
+		'path': publishPath,
+		//'target': '', // choose publish target
+		//'log': '', // publish version description
+		//'include_checked_out': true, // or false, should this publish checked out files?
+		//'include_scheduled_publish': true, // or false, should this publish files that have publish schedules?
+		//'include_pending_approval': true, // or false, should this publish files that are pending approval?
+		//'changed_only': true, // or false, should this only publish files with changes?
+		//'last_published': true, // or false, should this use the last published version?
+		//'exclude_bin': true, // or false, should this publish ignore binary files?
+		//'include_unpublished': true, // or false, should this publish unpublished files?
+	}).toString();
+
+	const response = await fetch(`https://a.cms.omniupdate.com/files/publish?${params}`, {
+		method: 'POST',
+		headers: {
+			'X-Auth-Token': token
+		}
+	});
+
+	const result = await response.json();
+
+	// Returns a key for the publish
+	return result;
+}
+
 (async () => {
 	// Ensure the UPLOAD_PATH exists in the CMS, or the API call may fail quietly 
 	const token = await cmsLogin('[SKIN]', '[ACCOUNT]', '[USERNAME]', '[PASSWORD]');
 	console.log(await uploadXML(token, '[SITE]', '[XML_PATH]', '[UPLOAD_PATH]'));
+	console.log(await publishFile(token, '[SITE]', '[PUBLISH_PATH]'));
 })();

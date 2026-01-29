@@ -23,6 +23,11 @@ uploadPath should point to a directory - ensure the directory exists, or the API
 
 The function will then read the XML file, convert it into a binary object of type `text/xml` and pass it to the API to be uploaded to the uploadPath.
 
+### publishFile
+
+This uses the `/files/publish` API call to publish a single file to production.
+Like uploadXML, it needs a token from cmsLogin, the site with the desired file to publish, and the path to that file.
+
 ## More Information
 
 More information on API calls can be found in the [Modern Campus CMS API Documentation](https://support.moderncampus.com/cms/technical-reference/api-documentation/cms.html)
