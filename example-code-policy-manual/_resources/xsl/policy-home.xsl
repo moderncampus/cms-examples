@@ -47,7 +47,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<h1>{ou:pcf-param('heading')}</h1>
+							<h1>{ou:multiedit-field('title')}</h1>
 						</div>
 					</div>
 				</div>
@@ -77,6 +77,14 @@
 						</div>
 					</div>
 					<div class="col-lg-9">
+						<h2>{ou:multiedit-field('number')}—{ou:multiedit-field('title')}</h2>
+						<p>
+							<strong>Effective: </strong>{ou:multiedit-field('effective')}
+							<br/>
+							<xsl:if test="ou:not-empty(ou:multiedit-field('lastUpdated'))">
+								<strong>Last updated: </strong>{ou:multiedit-field('lastUpdated')}
+							</xsl:if>
+						</p>
 						<xsl:apply-templates select="ouc:div[@label='main-content']" />
 						<xsl:call-template name="dmc">
 							<xsl:with-param name="options">
@@ -91,6 +99,10 @@
 							<xsl:with-param name="debug" select="false()" />
 						</xsl:call-template>
 						<xsl:apply-templates select="ouc:div[@label='additional-content']" />
+						<xsl:if test="ou:multiedit-field('revision-info') != ''">
+							<h2>Revisions</h2>
+							<xsl:copy-of select="ou:multiedit-field('revision-info')/node()[not(self::ouc:multiedit)]" copy-namespaces="no"/>
+						</xsl:if>
 					</div>
 				</div>
 			</div>

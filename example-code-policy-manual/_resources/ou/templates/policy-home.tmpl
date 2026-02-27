@@ -21,7 +21,7 @@
 	</ouc:properties>
 
 	<ouc:properties label="config">
-		<parameter name="heading" type="text" group="Everyone" prompt="Page Heading" alt="Please enter the page heading."></parameter>
+		<parameter name="heading" type="radio" group="Everyone" prompt="Page Heading" alt="Page Heading can be edited via the Title field in the MultiEdit interface."></parameter>
 		<parameter name="breadcrumb" type="text" group="Everyone" prompt="Custom Breadcrumb" alt="Default is Page Heading. This is not used on index pages."></parameter>
 		<parameter section="Hero Banner" name="banner-image" type="filechooser" path="/_resources/images" group="Everyone" prompt="Banner Image" alt="Choose an image for the banner hero."></parameter>
 	</ouc:properties>
@@ -31,7 +31,9 @@
 	<item>
 		<ouc:div label="number" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="number" alt="Enter the policy number."/></ouc:div>
 		<ouc:div label="title" group="Everyone" button="hide"><ouc:multiedit type="text" prompt="Title" alt="Enter the title of the policy section."/></ouc:div>
+		<ouc:div label="effective" group="Everyone" button="hide"><ouc:multiedit type="date" prompt="Effective Date" alt="When was this policy created/made effective."/></ouc:div>
 		<ouc:div label="lastUpdated" group="Everyone" button="hide"><ouc:multiedit type="date" prompt="Last Updated" alt="When was this policy last updated (if applicable)."/></ouc:div>
+		<ouc:div label="revision-info" group="Everyone" button="hide"><ouc:multiedit type="textarea" prompt="Revision History" alt="Create a bulleted list of revisions to maintain a revision history." editor="yes"/></ouc:div>
 	</item>
 
 	<ouc:div label="main-content" group="Everyone" button-text="Main Content"><ouc:editor csspath="/_resources/ou/editor/wysiwyg.css" cssmenu="/_resources/ou/editor/styles.txt" wysiwyg-class="main-content"/></ouc:div>
